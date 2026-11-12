@@ -1,0 +1,6 @@
+# Preserve byte-exact source, evidence, archives, and notebook identities.
+* -text
+*.png binary
+*.pdf binary
+*.docx binary
+*.zip binary

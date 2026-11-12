@@ -1,0 +1,49 @@
+{
+  "type": "function",
+  "function": {
+    "name": "read_repository",
+    "description": "Read complete artifact rows from a host-approved pinned repository generation. A pin is not a claim of current worktree freshness. No filesystem path or edit is accepted.",
+    "parameters": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "scope": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 64,
+          "description": "Host-provided scope identifier."
+        },
+        "generation": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{32}$",
+          "description": "Exact host-provided generation token."
+        },
+        "first": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 18446744073709551615,
+          "description": "First generation-local row index."
+        },
+        "count": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 16,
+          "description": "Number of complete rows, not text lines."
+        },
+        "max_bytes": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 262144,
+          "description": "Body-byte budget, not a model-token budget."
+        }
+      },
+      "required": [
+        "scope",
+        "generation",
+        "first",
+        "count",
+        "max_bytes"
+      ]
+    }
+  }
+}

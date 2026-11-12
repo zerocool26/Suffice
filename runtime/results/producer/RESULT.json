@@ -1,0 +1,22 @@
+{
+  "counters": {
+    "expected_rejections": 33,
+    "interrupted_commits_preserved": 1,
+    "no_change_reuses": 8,
+    "publications": 22,
+    "row_bytes_compared": 4356,
+    "rows_compared": 82,
+    "uncertain_candidates_retained": 1
+  },
+  "errors": 0,
+  "failures": 0,
+  "native_windows_tested": false,
+  "packer": "/workspace/scratch/8dfa229f9a87/suffice_v0_13/build/transport_release/suffice",
+  "packer_sha256": "e4e2f3563530effd1efffdfa784fa208096f748ccd9b3a20a1694f0f7bc0b891",
+  "producer_sha256": "23ce5b268e808d082f80fb811a9ce212298a720ed6236ea324a1f2b489894613",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "skipped": 0,
+  "status": "passed",
+  "test_cases": 22,
+  "test_sha256": "f32e14f9792a9575162df3a55f31709196123392a04d61e0e9582a8992356bbc"
+}

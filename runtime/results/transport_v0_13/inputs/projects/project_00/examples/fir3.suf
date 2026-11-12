@@ -1,0 +1,9 @@
+# Exact three-point second difference on channel zero.
+input left 0 -1
+input center 0 0
+input right 0 1
+scale doubled center 2
+add neighbors left right
+sub difference neighbors doubled
+abs magnitude difference
+output magnitude > 100000

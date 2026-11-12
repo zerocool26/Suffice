@@ -1,0 +1,5 @@
+# Demonstrates a shared-expression identity. The answer is always false.
+# This is a compiler test case, not a meaningful speedup benchmark.
+input current 0 0
+sub zero current current
+output zero > 0

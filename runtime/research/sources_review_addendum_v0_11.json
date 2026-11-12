@@ -1,0 +1,64 @@
+{
+  "scope": "Primary sources consulted for the source-review addendum; separate from the original 18-source design catalog. Source findings are not native Windows execution evidence.",
+  "sources": [
+    {
+      "id": "R01",
+      "title": "Python os.replace and rename documentation",
+      "url": "https://docs.python.org/3/library/os.html#os.replace",
+      "refs": [
+        "turn43view0",
+        "turn43view3"
+      ],
+      "supports": "Successful rename atomicity is described as a POSIX requirement; same-filesystem replacement does not by itself establish power-loss durability."
+    },
+    {
+      "id": "R02",
+      "title": "Python os.DirEntry.stat Windows identity fields",
+      "url": "https://docs.python.org/3/library/os.html#os.DirEntry.stat",
+      "refs": [
+        "turn44view0",
+        "turn44view1"
+      ],
+      "supports": "On Windows, DirEntry.stat zeroes st_ino, st_dev and st_nlink; use full stat where these values are required."
+    },
+    {
+      "id": "R03",
+      "title": "Python pathlib general properties",
+      "url": "https://docs.python.org/3/library/pathlib.html#general-properties",
+      "refs": [
+        "turn45view0",
+        "turn45view1"
+      ],
+      "supports": "PureWindowsPath comparison uses case folding; syntactic equality is insufficient to distinguish case-only siblings in an actually case-sensitive Windows directory."
+    },
+    {
+      "id": "R04",
+      "title": "Microsoft MoveFileExW",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-movefileexw",
+      "refs": [
+        "turn43view1"
+      ],
+      "supports": "Windows move/replace flags, same-volume directory behavior, cross-volume copying and write-through flag semantics. This does not independently prove a universal atomic-visibility or power-loss guarantee for every Python os.replace deployment."
+    },
+    {
+      "id": "R05",
+      "title": "Microsoft ReplaceFileW",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-replacefilew",
+      "refs": [
+        "turn31search4",
+        "turn43view2"
+      ],
+      "supports": "Replacement requires the same volume, documents failure states, and does not support REPLACEFILE_WRITE_THROUGH. It must not be treated as a blanket durability guarantee."
+    },
+    {
+      "id": "R06",
+      "title": "NIST SHA-256 worked examples",
+      "url": "https://csrc.nist.gov/CSRC/media/Projects/Cryptographic-Standards-and-Guidelines/documents/examples/SHA256.pdf",
+      "refs": [
+        "turn40view0",
+        "turn41view0"
+      ],
+      "supports": "Official one- and two-block SHA-256 example message digests used by the retained independent probe."
+    }
+  ]
+}

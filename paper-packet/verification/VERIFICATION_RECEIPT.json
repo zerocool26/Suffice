@@ -1,0 +1,112 @@
+{
+  "archive_files": 372,
+  "artifact_filename_update": {
+    "code_cells_reexecuted": false,
+    "current_name": "Suffice_Offline_Verification.ipynb",
+    "notebook_bytes_unchanged": true,
+    "notebook_sha256": "2327d724edd4af06c5790600131e47ea379a69acc3a5c40539f57cf5635f4b6c",
+    "original_name": "Suffice_0_13_Offline_Verification.ipynb",
+    "reason": "Canonical notebook deliverable name; execution source and outputs are unchanged."
+  },
+  "audit_report": "OFFLINE_AUDIT_RESULT.json",
+  "audit_report_sha256": "ecb742a73ff6a6123567c12ede9d033aa110feb5a834501a5ed6d80690588656",
+  "auditor_execution_guard": {
+    "network_events": 0,
+    "outside_file_events": 0,
+    "process_events": 0,
+    "read_events": 943
+  },
+  "cells": [
+    {
+      "cell_index": 2,
+      "display_outputs": 0,
+      "execution_count": 1,
+      "source_sha256": "cf379c4e7322081faf00844005e22715152d201f67a99a12c2c17d0cb3fd896f",
+      "status": "passed",
+      "stderr": "",
+      "stdout": "",
+      "wall_ms": 15.610383998136967
+    },
+    {
+      "cell_index": 4,
+      "display_outputs": 0,
+      "execution_count": 2,
+      "source_sha256": "2f27fa015331b32882619ae09f6f2245db7592922c4f77d936dbde6108e10b62",
+      "status": "passed",
+      "stderr": "",
+      "stdout": "Loaded 3,837,891 verified ZIP bytes.\n",
+      "wall_ms": 73.22028899943689
+    },
+    {
+      "cell_index": 6,
+      "display_outputs": 0,
+      "execution_count": 3,
+      "source_sha256": "1a5929ee47ef26792c52a1895a8fddffa0227e9d9a06af791fa4b4c325550720",
+      "status": "passed",
+      "stderr": "",
+      "stdout": "PASS: retained 0.13 evidence agrees with the frozen auditor and saved summary.\n187 inputs, 78 frozen sources, 100 process records, 4840 complete-output checks.\nReconciled 23,480 rows and 419,571,140 repeated body bytes.\nNo native executable, model, network request or historical timing was run.\n",
+      "wall_ms": 964.3805659979989
+    },
+    {
+      "cell_index": 8,
+      "display_outputs": 1,
+      "execution_count": 4,
+      "source_sha256": "263cabd48b79ddd2940e15d64967c9fec388eb6c6e96ebd2c1ccd9ffe0dad136",
+      "status": "passed",
+      "stderr": "",
+      "stdout": "",
+      "wall_ms": 0.21147200095583685
+    },
+    {
+      "cell_index": 10,
+      "display_outputs": 1,
+      "execution_count": 5,
+      "source_sha256": "077abfd4fa5f8f7408b88865854a9b32b9814998701c0660432cec5bce22ebfa",
+      "status": "passed",
+      "stderr": "",
+      "stdout": "",
+      "wall_ms": 0.10612700134515762
+    }
+  ],
+  "code_cells_executed": 5,
+  "counts": {
+    "complete_output_checks": 4840,
+    "processes": 100,
+    "result_admissions": 1240,
+    "result_evictions": 240,
+    "result_hits": 1680,
+    "verified_bytes": 419571140,
+    "verified_rows": 23480,
+    "wire_bytes_received": 639715576,
+    "wire_bytes_sent": 1035660
+  },
+  "embedded_archive_sha256": "c6ba35462a6e1e997808aa68efda16e75ec5ec8a6e0812e59cc2a3df0ef57eac",
+  "executed_notebook_name": "Suffice_0_13_Offline_Verification.ipynb",
+  "execution_method": "stdlib driver executed every code cell in order; captured stream and rich outputs",
+  "external_action_audit": {
+    "external_process_events": 0,
+    "network_events": 0
+  },
+  "finished_utc": "2026-11-12T06:13:42.950725+00:00",
+  "frozen_source_files": 78,
+  "historical_native_outputs_reexecuted": false,
+  "included_auditor_sha256": "edd889bc32902304a79c2e719174841cc505567281272e703b4cd55831f6a3c9",
+  "input_files": 187,
+  "jupyter_or_kaggle_ui_execution": false,
+  "model_calls_performed": false,
+  "native_suffice_executables_invoked": false,
+  "notebook": "Suffice_Offline_Verification.ipynb",
+  "notebook_bytes": 5580029,
+  "notebook_sha256": "2327d724edd4af06c5790600131e47ea379a69acc3a5c40539f57cf5635f4b6c",
+  "notebook_source_identity_after": "f60b6367eebcc0879ffe3af6e7af140a1af0d5362228399af21a017eca4b908a",
+  "notebook_source_identity_before": "f60b6367eebcc0879ffe3af6e7af140a1af0d5362228399af21a017eca4b908a",
+  "paired_blocks_per_scenario": 10,
+  "payload_frames_redecompressed": false,
+  "platform": "linux",
+  "publicly_posted": false,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "schema_version": 1,
+  "started_utc": "2026-11-12T06:13:41.829497+00:00",
+  "status": "passed",
+  "wall_ms": 1121.2263380002696
+}

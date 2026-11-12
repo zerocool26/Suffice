@@ -1,0 +1,8 @@
+# Select nonzero energy in the negative component of each input.
+# The exact preimage compiler proves this is x < 0, then the packed executor
+# projects the complement of the biased sign plane into the answer mask.
+input x 0 0
+const zero 0
+min negative x zero
+square energy negative
+output energy > 0

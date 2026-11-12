@@ -1,0 +1,9 @@
+SUFCAT01
+generation	cc2b09a570724ca3b23f1321c58ec5ba
+rows	9
+channels	4
+schema	1
+component	features.i32	144	e6f371503ac9bccd90adcd2847d25814f17e15fadcecd9982781e566342a41eb
+component	features.sfp	352	79de15cc1e8306c1e4a5864c06c744feb41013f82ebf01dd3e69b77a663cc75c
+component	payload.spp	42779	1d582521be9f5a8eb3d809d8fd9eafa60551a8cc94ffd6e31cf8e2715bf92ace
+component	rows.tsv	1083	49d7463decca128ab920e7184c185d3eda41e15af0b4a42e63b4c803fc292c5c

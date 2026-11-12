@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "topic": "Resource-aware prepared-worker retention and selective complete-result admission",
+  "retrieved_utc_date": "2026-11-12",
+  "user_facing_date_chicago": "2026-11-11",
+  "status": "Research and proposed design; no runtime modifications or new measurements by this research task",
+  "source_policy": "Primary publisher, author or institutional records; no third-party paper PDFs redistributed",
+  "sources": [
+    {
+      "id": "R1",
+      "title": "Cost-Aware WWW Proxy Caching Algorithms",
+      "authors": ["Pei Cao", "Sandy Irani"],
+      "venue": "USENIX Symposium on Internet Technologies and Systems",
+      "date": "1997-12-08/1997-12-11",
+      "date_basis": "Proceedings conference dates, verified in original publisher HTML; not a claimed exact online-publication day",
+      "primary_url": "https://www.usenix.org/conference/usits-97/cost-aware-www-proxy-caching-algorithms",
+      "full_text_url": "https://www.usenix.org/legacy/publications/library/proceedings/usits97/full_papers/cao/cao_html/cao.html",
+      "verified_refs": ["turn74view1", "turn78view1"],
+      "relevance": "Locality, cost and size should be considered together; future avoidable cost must be distinguished from completed construction."
+    },
+    {
+      "id": "R2",
+      "title": "Lightweight Robust Size Aware Cache Management",
+      "authors": ["Gil Einziger", "Ohad Eytan", "Roy Friedman", "Benjamin Manes"],
+      "venue": "ACM Transactions on Storage 18(3), article 27",
+      "date": "2022-08-25",
+      "date_basis": "Journal publication date in author institution's publication record",
+      "doi": "10.1145/3507920",
+      "primary_url": "https://cris.technion.ac.il/en/publications/lightweight-robust-size-aware-cache-management/",
+      "full_text_url": "https://arxiv.org/html/2105.08770v2",
+      "preprint_url": "https://arxiv.org/abs/2105.08770v2",
+      "preprint_note": "The earlier Suffice paper cites the 2021 preprint; this catalog additionally records the verified 2022 journal publication without rewriting that preserved paper.",
+      "verified_refs": ["turn74view2", "turn78view2"],
+      "relevance": "Evaluate a variable-size candidate against the complete victim set; predictive construction economics are an additional Suffice design question."
+    },
+    {
+      "id": "R3",
+      "title": "FIFO Queues are All You Need for Cache Eviction",
+      "authors": ["Juncheng Yang", "Yazhuo Zhang", "Ziyue Qiu", "Yao Yue", "K. V. Rashmi"],
+      "venue": "ACM SOSP 2023",
+      "date": "2023-10-23/2023-10-26",
+      "date_basis": "Proceedings conference dates printed in author-hosted paper",
+      "doi": "10.1145/3600006.3613147",
+      "primary_url": "https://sigops.org/s/conferences/sosp/2023/toc.html",
+      "full_text_url": "https://www.cs.cmu.edu/~rvinayak/papers/s3-fifo-sosp-2023-fifo-queues-are-all-you-need-for-cache-eviction.pdf",
+      "verified_refs": ["turn73view3", "turn75view4"],
+      "relevance": "Probation, quick demotion and bounded ghost state; a metadata-only second-touch gate is a different baseline."
+    },
+    {
+      "id": "R4",
+      "title": "SIEVE is Simpler than LRU: an Efficient Turn-Key Eviction Algorithm for Web Caches",
+      "authors": ["Yazhuo Zhang", "Juncheng Yang", "Yao Yue", "Ymir Vigfusson", "K. V. Rashmi"],
+      "venue": "USENIX NSDI 2024",
+      "date": "2024-04-16/2024-04-18",
+      "date_basis": "Proceedings conference dates on publisher PDF cover",
+      "primary_url": "https://www.usenix.org/conference/nsdi24/presentation/zhang-yazhuo",
+      "full_text_url": "https://www.usenix.org/system/files/nsdi24-zhang-yazhuo.pdf",
+      "verified_refs": ["turn67view1", "turn77view0"],
+      "relevance": "A low-overhead eviction comparator; web-cache concurrency gains do not automatically apply to the serialized catalog."
+    },
+    {
+      "id": "R5",
+      "title": "LHD: Improving Cache Hit Rate by Maximizing Hit Density",
+      "authors": ["Nathan Beckmann", "Haoxian Chen", "Asaf Cidon"],
+      "venue": "USENIX NSDI 2018",
+      "date": "2018-04-09/2018-04-11",
+      "date_basis": "Proceedings conference dates on publisher PDF cover",
+      "primary_url": "https://www.usenix.org/conference/nsdi18/presentation/beckmann",
+      "full_text_url": "https://www.usenix.org/system/files/conference/nsdi18/nsdi18-beckmann.pdf",
+      "verified_refs": ["turn74view0", "turn78view0"],
+      "relevance": "Conditional reuse and space consumption; utility should represent saved service work when hit values differ."
+    },
+    {
+      "id": "R6",
+      "title": "CacheSack: Admission Optimization for Google Datacenter Flash Caches",
+      "authors": ["Tzu-Wei Yang", "Seth Pollen", "Mustafa Uysal", "Arif Merchant", "Homer Wolfmeister"],
+      "venue": "USENIX Annual Technical Conference 2022",
+      "date": "2022-07-11/2022-07-13",
+      "date_basis": "Proceedings conference dates on publisher PDF cover",
+      "primary_url": "https://www.usenix.org/conference/atc22/presentation/yang-tzu-wei",
+      "full_text_url": "https://www.usenix.org/system/files/atc22-yang-tzu-wei.pdf",
+      "verified_refs": ["turn73view1", "turn75view1"],
+      "relevance": "Choose admission policies using system-specific costs and workload categories; datacenter flash economics require remeasurement locally."
+    },
+    {
+      "id": "R7",
+      "title": "Baleen: ML Admission & Prefetching for Flash Caches",
+      "authors": ["Daniel Lin-Kit Wong", "Hao Wu", "Carson Molder", "Sathya Gunasekar", "Jimmy Lu", "Snehal Khandkar", "Abhinav Sharma", "Daniel S. Berger", "Nathan Beckmann", "Gregory R. Ganger"],
+      "venue": "USENIX FAST 2024",
+      "date": "2024-02-27/2024-02-29",
+      "date_basis": "Proceedings conference dates on publisher PDF cover",
+      "primary_url": "https://www.usenix.org/conference/fast24/presentation/wong",
+      "full_text_url": "https://www.usenix.org/system/files/fast24-wong.pdf",
+      "verified_refs": ["turn73view2", "turn75view2"],
+      "relevance": "Residency episodes and direct end-to-end cost objectives rather than hit ratio alone."
+    },
+    {
+      "id": "R8",
+      "title": "Learning-Augmented Heuristics: Simple Yet Smart, Robust and Interpretable Cache Eviction",
+      "authors": ["Haocheng Xia", "William Nixon", "Bintang Dwi Marthen", "Pranav Bhandari", "Juncheng Yang"],
+      "venue": "USENIX OSDI 2026",
+      "date": "2026-07-13/2026-07-15",
+      "date_basis": "Proceedings conference dates on publisher PDF cover",
+      "primary_url": "https://www.usenix.org/conference/osdi26/presentation/xia",
+      "full_text_url": "https://www.usenix.org/system/files/osdi26-xia.pdf",
+      "verified_refs": ["turn73view0", "turn74view3", "turn75view5"],
+      "relevance": "Separate simple deterministic request handling from occasional cache-level configuration learning; adaptation remains unimplemented in this research task."
+    }
+  ],
+  "local_evidence": [
+    {"path": "suffice_v0_11/docs/catalog_api_v0_11.md", "sha256": "b797493863a4de6aa9febe54cfd752f9c4eb2de6eeb79644fcc3fb6ec5aad7cc", "bytes": 13283},
+    {"path": "suffice_v0_11/docs/catalog_review_v0_11.md", "sha256": "9ef5f47eefe244651e6e02d981bb965fa8de8b3272dc38713bddd1767b2aa33b", "bytes": 22187},
+    {"path": "suffice_v0_11/include/suffice/catalog.hpp", "sha256": "49ffe9e2c05b38e0c0be8a6fec0bd0636d134d3aead90ac60616afb102e46308", "bytes": 6088},
+    {"path": "suffice_v0_11/apps/catalog/catalog.cpp", "sha256": "6a2697282cf393a8cddfa5bbb4e7ce201399cfd68728b7d2b62693034ca38c8e", "bytes": 23169},
+    {"path": "kaggle_suffice_submission_2026/paper/Suffice_Kaggle_Writeup.md", "sha256": "ed1c4b093b83b86efb049e7932dd83791282c48bd96de7fa1872e49176c12eb8", "bytes": 17813}
+  ],
+  "recommended_sequence": [
+    "Bound retained worker components and verify post-run/exceptional growth behavior",
+    "Reduce duplicate construction work while preserving transactional output and admission semantics",
+    "Compare a bounded, explicitly named admission baseline against existing policies",
+    "Measure per-class marginal saved work before considering periodic learned configuration"
+  ],
+  "claims_not_made": [
+    "Novel invention of caching, leases, admission filtering or cost-aware replacement",
+    "Measured Suffice benefit from any external paper's results",
+    "A proven optimal online controller",
+    "A whole-process or peak-RSS limit",
+    "Implementation or evaluation of the proposed changes by this research task"
+  ]
+}

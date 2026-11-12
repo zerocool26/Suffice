@@ -1,0 +1,18 @@
+PASS exact arithmetic, interval certificates, compiler and parser
+PASS storage, progressive prefixes and malformed files
+PASS backward predicate compilation and budget fallback
+PASS direct encoded range execution
+PASS differential execution, SIMD, halos and allocation discipline
+PASS portable transpose decoding, tails, channels and basis bits
+PASS tiled SIMD execution, liveness slots, aliases and compact channels
+PASS exact multi-input predicate lowering and encoded/dense masks
+PASS prepared adaptive selection, forced paths and resource contracts
+PASS global row ranges, original halos, unaligned masks and allocation discipline
+PASS exact bitplane circuits, liveness, thresholds and ranged execution
+PASS certified prefix bounds, shared forests and canonical plan validation
+PASS bounded Boolean proofs, care equivalence and exhaustion
+PASS per-atom carry residuals, suffix-only circuits, liveness and bounds
+PASS frontier runtime, exact residuals, ranges and allocation discipline
+PASS native code emission and generated source contracts
+PASS bounded portfolio calibration, selection and resource contracts
+All Suffice tests passed.

@@ -1,0 +1,213 @@
+{
+  "schema_version": 1,
+  "document": "foundations.md",
+  "status": "proposed architecture and falsifiable experiments; no runtime implementation or benchmark claimed",
+  "sources": [
+    {
+      "id": "F01",
+      "title": "Adapton: Composable, Demand-Driven Incremental Computation",
+      "authors": [
+        "Matthew A. Hammer",
+        "Yit Phang Khoo",
+        "Michael Hicks",
+        "Jeffrey S. Foster"
+      ],
+      "publication_year": 2014,
+      "venue": "PLDI",
+      "doi": "10.1145/2594291.2594324",
+      "url": "https://www.cs.umd.edu/~mwh/papers/adapton-submit.pdf",
+      "artifact_url": "https://www.cs.umd.edu/projects/PL/adapton/",
+      "retrieved_refs": [
+        "turn70view2",
+        "turn76view4",
+        "turn69view2"
+      ],
+      "scope": "Demanded computation graph, laziness, consistency with from-scratch results. No published speedup transferred to Suffice.",
+      "version_note": "Author-hosted accepted manuscript has 2013 draft date; cited publication is PLDI 2014.",
+      "source_type": "primary paper or official project/platform documentation",
+      "accessed_utc_date": "2026-11-12",
+      "accessed_chicago_date": "2026-11-11"
+    },
+    {
+      "id": "F02",
+      "title": "A Consistent Semantics of Self-Adjusting Computation",
+      "authors": [
+        "Umut A. Acar",
+        "Matthias Blume",
+        "Jacob Donham"
+      ],
+      "publication_year": 2007,
+      "venue": "ESOP; full arXiv version 2011",
+      "version_date": "2011-06-02",
+      "url": "https://arxiv.org/abs/1106.0478",
+      "retrieved_refs": [
+        "turn69view1"
+      ],
+      "scope": "Formal correctness and consistency precedent; no claim that its Twelf proofs cover Suffice.",
+      "source_type": "primary paper or official project/platform documentation",
+      "accessed_utc_date": "2026-11-12",
+      "accessed_chicago_date": "2026-11-11"
+    },
+    {
+      "id": "F03",
+      "title": "Incremental Computation with Names",
+      "authors": [
+        "Matthew A. Hammer",
+        "Jana Dunfield",
+        "Kyle Headley",
+        "Nicholas Labich",
+        "Jeffrey S. Foster",
+        "Michael Hicks",
+        "David Van Horn"
+      ],
+      "publication_year": 2015,
+      "venue": "OOPSLA",
+      "doi": "10.1145/2814270.2814305",
+      "version": "arXiv v6",
+      "version_date": "2021-03-23",
+      "url": "https://arxiv.org/abs/1503.07792v6",
+      "retrieved_refs": [
+        "turn70view1"
+      ],
+      "scope": "Explicit computation names and from-scratch consistency; stable names do not replace dependency validity.",
+      "source_type": "primary paper or official project/platform documentation",
+      "accessed_utc_date": "2026-11-12",
+      "accessed_chicago_date": "2026-11-11"
+    },
+    {
+      "id": "F04",
+      "title": "Build Systems à la Carte: Theory and Practice",
+      "authors": [
+        "Andrey Mokhov",
+        "Neil Mitchell",
+        "Simon Peyton Jones"
+      ],
+      "publication_year": 2020,
+      "venue": "Journal of Functional Programming 30, e11",
+      "doi": "10.1017/S0956796820000088",
+      "url": "https://simon.peytonjones.org/assets/pdfs/build-systems-jfp.pdf",
+      "retrieved_refs": [
+        "turn70view0",
+        "turn76view5"
+      ],
+      "scope": "Scheduling/rebuilding separation, dynamic dependencies, impurity and volatile tasks. Proposed observation-interface theorem is separately reasoned.",
+      "source_type": "primary paper or official project/platform documentation",
+      "accessed_utc_date": "2026-11-12",
+      "accessed_chicago_date": "2026-11-11"
+    },
+    {
+      "id": "F05",
+      "title": "Tuning: Cache Eviction and Cancellation",
+      "organization": "Salsa project",
+      "publication_date": null,
+      "url": "https://salsa-rs.github.io/salsa/tuning.html",
+      "retrieved_refs": [
+        "turn72search3",
+        "turn76view1"
+      ],
+      "scope": "Current practical query LRU and cooperative cancellation documentation; no claimed C++ implementation transfer.",
+      "source_type": "primary paper or official project/platform documentation",
+      "accessed_utc_date": "2026-11-12",
+      "accessed_chicago_date": "2026-11-11"
+    },
+    {
+      "id": "F06",
+      "title": "Durability",
+      "organization": "Salsa project",
+      "publication_date": null,
+      "url": "https://salsa-rs.github.io/salsa/reference/durability.html",
+      "retrieved_refs": [
+        "turn76view2"
+      ],
+      "scope": "Dependency validation optimization based on input change categories, not power-loss storage durability.",
+      "source_type": "primary paper or official project/platform documentation",
+      "accessed_utc_date": "2026-11-12",
+      "accessed_chicago_date": "2026-11-11"
+    },
+    {
+      "id": "F07",
+      "title": "What's in a build environment?",
+      "organization": "Reproducible Builds project",
+      "publication_date": null,
+      "url": "https://reproducible-builds.org/docs/perimeter/",
+      "retrieved_refs": [
+        "turn76view3"
+      ],
+      "scope": "Build environment scope and identity; exact dependencies remain task-specific.",
+      "source_type": "primary paper or official project/platform documentation",
+      "accessed_utc_date": "2026-11-12",
+      "accessed_chicago_date": "2026-11-11"
+    },
+    {
+      "id": "F08",
+      "title": "CancelIoEx function (ioapiset.h)",
+      "organization": "Microsoft",
+      "publication_date": null,
+      "url": "https://learn.microsoft.com/en-us/windows/win32/api/ioapiset/nf-ioapiset-cancelioex",
+      "retrieved_refs": [
+        "turn72search0",
+        "turn76view0"
+      ],
+      "scope": "Cancellation request does not establish completion; OVERLAPPED state remains live until completion. Native Windows testing remains required.",
+      "source_type": "primary paper or official project/platform documentation",
+      "accessed_utc_date": "2026-11-12",
+      "accessed_chicago_date": "2026-11-11"
+    }
+  ],
+  "baseline_documents": [
+    {
+      "path": "suffice_v0_11/README.md",
+      "sha256": "a4f485f421eb3ffcf35d10a4d1462b6c673e3bc98b1c7f3a3a95f41bf5ec7572"
+    },
+    {
+      "path": "suffice_v0_11/docs/catalog_review_v0_11.md",
+      "sha256": "9ef5f47eefe244651e6e02d981bb965fa8de8b3272dc38713bddd1767b2aa33b"
+    },
+    {
+      "path": "suffice_v0_11/docs/research_catalog_v0_11.md",
+      "sha256": "6a754c8b9c1e4303a4459972fc315a917b0f6dc3f0a71f14bceed4ef1b5e2031"
+    },
+    {
+      "path": "suffice_v0_10/docs/research_agenda_v0_10.md",
+      "sha256": "4008e27b8777ced76504e5f3978d784ac0702dd9c29a91bfdb80513447d7fc9d"
+    },
+    {
+      "path": "suffice_v0_10/docs/architecture_direction_v0_9.md",
+      "sha256": "81d1717d39cd65ec926d4e2d4ae95d7f8c334be2b6a1b0ac644fbec755d0b433"
+    },
+    {
+      "path": "suffice_v0_10/docs/research_foundations_v0_9.md",
+      "sha256": "8f3f3894229562462ed0262cfa86444a8b64825eb283f4f8a44337b414770a15"
+    }
+  ],
+  "reasoning_claims": [
+    {
+      "number": 1,
+      "name": "Complete deterministic observation trace preserves output",
+      "status": "proof sketch under declared pure/versioned interface; not machine checked"
+    },
+    {
+      "number": 2,
+      "name": "Unchanged output delivery imposes an end-to-end lower bound",
+      "status": "conditional bandwidth and additive-stage model, not measured phase share"
+    },
+    {
+      "number": 3,
+      "name": "Shared ownership creates diminishing marginal allocation cost",
+      "status": "set-union proof for fixed allocation/ownership graph"
+    },
+    {
+      "number": 4,
+      "name": "Reservations preserve controlled allocation bound",
+      "status": "inductive invariant; does not establish RSS bound"
+    }
+  ],
+  "proposed_experiments": [
+    "E1: bounded dependency witnesses and incremental validity",
+    "E2: output representations including actual downstream consumption",
+    "E3: ten-project sharing, retention and cancellation pressure"
+  ],
+  "third_party_pdfs_redistributed": false,
+  "native_runtime_modified": false,
+  "new_native_experiments_performed": false
+}

@@ -1,0 +1,5 @@
+# A two-sided exact predicate over one unshifted channel.
+# Every int32 input is valid under the int64 arithmetic contract.
+input current 0 0
+abs magnitude current
+output magnitude > 500000000

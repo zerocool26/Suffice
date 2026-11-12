@@ -1,0 +1,15 @@
+{
+  "title": "Suffice Exact Repository Observations for Developer Agents",
+  "subtitle": "Separating generation identity retained state and complete delivery",
+  "abstract": "Repository tools determine which project state a coding agent observes and how much work each observation costs. Cache-lookup microbenchmarks can omit generation admission, retained-state costs, output encoding, and consumer materialization. We present Suffice, a C++20/Python research resource that couples immutable generations, exact predicate and range identity, independently bounded retention, and validated response completion. In a controlled backend experiment, 100 fresh processes execute 4,840 requests whose ordered paths and complete bodies match an independent original-byte oracle. Binary responses reduce complete-session response bytes by 49.45-49.59% and measured service time by 44.43-53.23% across four nonempty workloads. An empty-output control increases bytes by 2.30% and shows no consistent timing advantage. A separately tested completed-read bridge exposes generation-scoped results through a model-callable interface. The contribution is an executable observation contract and auditable evaluation resource. Bridge latency, Gemma inference, token savings, and issue-resolution gains remain unmeasured.",
+  "writeup_file": "paper/Suffice_Kaggle_Writeup.md",
+  "pdf_file": "paper/Suffice_Paper.pdf",
+  "editable_source": "paper/Suffice_Paper.docx",
+  "notebook_file": "verification/Suffice_Offline_Verification.ipynb",
+  "figure_file": "paper/figures/transport_paper.png",
+  "public_project_links": [],
+  "public_pdf_url": null,
+  "public_notebook_url": null,
+  "submission_status": "not_submitted",
+  "next_action": "Entrant verifies rights/account, uploads public companions if used, previews the Writeup and presses Submit."
+}

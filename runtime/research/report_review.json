@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "review_kind": "Independent AI-assisted factual consistency review",
+  "reviewed_file": "REPORT.md",
+  "sha256": "5a87ec89c19f72bbe8a4719904eb2e5ecce721f27f131ab777789cc30df9d73b",
+  "status": "passed",
+  "conclusion": "No blocking factual mistakes, arithmetic errors or materially overstated claims found.",
+  "scope": [
+    "Six paired effects and percentage conversions",
+    "Raw-wall comparisons and service medians",
+    "Worker retention peaks and reconstruction counts",
+    "Output totals, build and integration records",
+    "Retained components versus RSS",
+    "Eight matched blocks versus output-check counts",
+    "Implemented versus proposed work",
+    "Linux evidence versus unexecuted Windows work"
+  ],
+  "native_tests_or_measurements_reexecuted": false
+}

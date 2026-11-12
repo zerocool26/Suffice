@@ -1,0 +1,26 @@
+suffice_catalog 0.13.0 - persistent exact artifact catalog
+Usage: suffice_catalog serve [--max-snapshot-bytes N] [--max-cache-bytes N]
+       [--max-metadata-bytes N] [--max-projects N] [--max-cache-entries N]
+       [--max-plans N] [--max-leases N]
+       [--max-worker-bytes N] [--max-worker-entries N]
+       [--population capture|recompute] [--transport jsonl|binary]
+The bounded stdin protocol uses TAB fields and lowercase hex for text:
+  OPEN <project_hex> <catalog_root_hex> <expected_revision>
+  STATE <project_hex>
+  PIN <alias_hex> <project_hex>
+  UNPIN <alias_hex>
+  RUN <project_hex> <program_hex> <first> <count|all> <bypass|use|populate> <hex|hash> <max_rows> <max_bytes>
+  RUNPIN <alias_hex> <program_hex> <first> <count|all> <bypass|use|populate> <hex|hash> <max_rows> <max_bytes>
+  DROP <project_hex> <expected_revision>
+  STATS
+  CLEAR <results|workers|plans|all>
+  QUIT
+Responses default to JSON lines; --transport binary uses bounded SFC1 frames.
+Each request has zero or more complete row events followed by one result event.
+Binary full rows use raw path/body bytes; the legacy output-mode name is hex.
+The binary payload cap is 4 MiB. See docs/binary_protocol_v0_13.md.
+Errors identify a delivered prefix. Hash mode consumes full output into an
+ordered diagnostic FNV hash; it does not return file contents. Publication is
+in-memory after full generation admission. Disk capture is a separate command:
+  python scripts/artifact_catalog.py --help
+Use scripts/catalog_client.py for the Python API and JSONL job interface.

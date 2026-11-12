@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "scope": "Standalone native framing gate and main syntax check; full builds/integration are root-owned.",
+  "compiler_command": [
+    "c++",
+    "-std=c++20",
+    "-O2",
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic",
+    "-Werror",
+    "tests/catalog_wire_main.cpp",
+    "-o",
+    "/workspace/scratch/8dfa229f9a87/research_v0_13/catalog_wire_check"
+  ],
+  "syntax_command": [
+    "c++",
+    "-std=c++20",
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic",
+    "-Werror",
+    "-I",
+    "include",
+    "-fsyntax-only",
+    "apps/catalog/main.cpp"
+  ],
+  "test_result": {
+    "status": "passed",
+    "groups": 9,
+    "checks": 125,
+    "expected_rejections": 129,
+    "poison_cases": 36
+  },
+  "inputs": {
+    "apps/catalog/main.cpp": "c80c80e3550a9da03f0fa4c54f7872c4f69c0a494eabbe90a87628c56372d5b5",
+    "apps/catalog/wire.hpp": "064d9a4f9e9bb993d8f1afdbf592e033af7f883046c6b631e52abe714b53002d",
+    "tests/catalog_wire_main.cpp": "5cdc7ea23404b8ef5f0214be89a6bc0651d3497992c64575eb07563708565fe1"
+  },
+  "binary_sha256": "9b7e8a7e963a14a3357fe6e506e4a863fe38e7d335ed940b1339008f47a6c43c",
+  "native_windows_tested": false
+}

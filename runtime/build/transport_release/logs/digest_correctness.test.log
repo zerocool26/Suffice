@@ -1,0 +1,1 @@
+PASS: 29 SHA-256 vectors; 20 UTF-8 boundaries; hexadecimal roundtrip and 4 rejections.

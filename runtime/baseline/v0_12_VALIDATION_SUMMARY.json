@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "release": "0.12.0",
+  "status": "passed",
+  "scope": "Index of executed validation and measurement receipts, not an additional independent test run.",
+  "native_windows_tested": false,
+  "records": {
+    "release_build": {
+      "path": "build/retention_release/build_manifest.json",
+      "sha256": "05df28f992884904a143f22a977a06bb5ad3e9b869ca7454c4bd9d59448c76e1",
+      "status": "passed",
+      "checks": {
+        "catalog_cli_help": "passed",
+        "catalog_cli_version": "passed",
+        "catalog_correctness": "passed",
+        "core_cli_version": "passed",
+        "core_correctness": "passed",
+        "digest_correctness": "passed",
+        "payload_cli_help": "passed",
+        "payload_cli_version": "passed",
+        "payload_correctness": "passed"
+      },
+      "input_stability": "unchanged"
+    },
+    "sanitized_build": {
+      "path": "build/retention_sanitize/build_manifest.json",
+      "sha256": "5f925af58e283f68902723f3e9796e7be902ec671d7868ec66e9c55c3f796d2f",
+      "status": "passed",
+      "checks": {
+        "catalog_cli_help": "passed",
+        "catalog_cli_version": "passed",
+        "catalog_correctness": "passed",
+        "core_cli_version": "passed",
+        "core_correctness": "passed",
+        "digest_correctness": "passed",
+        "payload_cli_help": "passed",
+        "payload_cli_version": "passed",
+        "payload_correctness": "passed"
+      },
+      "input_stability": "unchanged"
+    },
+    "producer": {
+      "path": "results/producer/RESULT.json",
+      "sha256": "330cff53b283580a9c12e38c00cdb99fd0d406144fc445f0eee42994bf921548",
+      "status": "passed",
+      "test_cases": 22,
+      "counters": {
+        "expected_rejections": 33,
+        "interrupted_commits_preserved": 1,
+        "no_change_reuses": 8,
+        "publications": 22,
+        "row_bytes_compared": 4356,
+        "rows_compared": 82,
+        "uncertain_candidates_retained": 1
+      },
+      "native_windows_tested": false
+    },
+    "integration_release": {
+      "path": "results/integration_release/RESULT.json",
+      "sha256": "ba27eedaa8fa57e0561c667d90cca7e6107bcaa8f462a6f4950985b5bbe27661",
+      "status": "passed",
+      "counters": {
+        "client_failure_checks": 9,
+        "corruptions_rejected": 14,
+        "full_output_calls": 34,
+        "hash_only_calls": 1,
+        "native_rejections": 35,
+        "plaintext_bytes_compared": 1224,
+        "plaintext_rows_compared": 181,
+        "producer_publications": 4,
+        "producer_reuses": 1,
+        "successful_native_commands": 114
+      },
+      "native_windows_tested": false
+    },
+    "integration_sanitize": {
+      "path": "results/integration_sanitize/RESULT.json",
+      "sha256": "c0ddae27294a4cc27e1250b1762808d4d101372c34b65bbb0c3b468d3dc245eb",
+      "status": "passed",
+      "counters": {
+        "client_failure_checks": 9,
+        "corruptions_rejected": 14,
+        "full_output_calls": 34,
+        "hash_only_calls": 1,
+        "native_rejections": 35,
+        "plaintext_bytes_compared": 1224,
+        "plaintext_rows_compared": 181,
+        "producer_publications": 4,
+        "producer_reuses": 1,
+        "successful_native_commands": 114
+      },
+      "native_windows_tested": false
+    },
+    "worker_protocol": {
+      "path": "results/worker_protocol/RESULT.json",
+      "sha256": "89db0a41a3e5913fb23bbf9836c4e01793c42235a87c0767ce03e4d6742c139b",
+      "status": "passed"
+    },
+    "experiment": {
+      "path": "results/retention_v0_12/RUN.json",
+      "sha256": "c19d81a246ae332b6d639545538ac3cd1322f3e2bb1e9d22ad315c33a0e263f5",
+      "status": "passed"
+    },
+    "retained_record_audit": {
+      "path": "results/retention_v0_12/SUMMARY.json",
+      "sha256": "dec47a7039ca58f71ffe4876d4910a0ee76bc79f17787e3bfd0c01f1093320af",
+      "status": "passed",
+      "totals": {
+        "complete_output_checks": 5440,
+        "processes": 112,
+        "result_admissions": 1984,
+        "result_evictions": 384,
+        "result_hits": 2688,
+        "verified_bytes": 578187424,
+        "verified_rows": 32064
+      }
+    }
+  },
+  "sanitizer_boundaries": [
+    "Leak detection disabled",
+    "External codec library not instrumented"
+  ]
+}

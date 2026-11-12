@@ -1,0 +1,11 @@
+{
+  "source_sha256": "b8923214bf1209b681e870fb305294ef00a90d044c829ab4594cc8c087469a04",
+  "observations": 50,
+  "statistic": "within-repeat JSONL / binary service time",
+  "uncertainty": "descriptive points only; no confidence intervals",
+  "omitted_observations": 0,
+  "files": {
+    "transport_paper.png": "ec6ec71f9a92170913ae7078faf84979802a57407112296dcc698285e61f90ef",
+    "transport_paper.svg": "1b66b4a99b692f3f53e1310178a51751ef6c84f86bf035f14ef6401be42d58ab"
+  }
+}

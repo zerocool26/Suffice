@@ -1,0 +1,19 @@
+# ((a >= 0 AND b >= 0) OR (c >= 0 AND d >= 0))
+# AND (e >= 0 OR f >= 0) AND (g >= 0 OR h >= 0).
+# One example of a compound decision over eight quantized feature channels.
+input a 0 0
+input b 1 0
+input c 2 0
+input d 3 0
+input e 4 0
+input f 5 0
+input g 6 0
+input h 7 0
+min ab a b
+min cd c d
+max left ab cd
+max ef e f
+max gh g h
+min right ef gh
+min accepted left right
+output accepted > -1

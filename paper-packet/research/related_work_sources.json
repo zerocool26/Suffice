@@ -1,0 +1,288 @@
+{
+  "schema_version": 1,
+  "status": "research_complete",
+  "accessed_utc_date": "2026-11-12",
+  "scope": "Primary literature and conditional architecture analysis, plus a separately identified native-tested read bridge; no model inference or modification of frozen Suffice runtime files.",
+  "strongest_reference_groups": [
+    "R1",
+    "R2",
+    "R3",
+    "R4",
+    "R5",
+    "R6",
+    "R7",
+    "R8"
+  ],
+  "sources": [
+    {
+      "id": "R1a",
+      "title": "Gemma 4 model card",
+      "authors_or_owner": "Google DeepMind",
+      "source_type": "official_model_documentation",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "retrieval_reference": "turn99view0",
+      "version_or_venue": "live documentation",
+      "claim_scope": "Family variants, native function calling, context windows. No Suffice model run supported.",
+      "accessed_utc_date": "2026-11-12",
+      "primary_source": true,
+      "direct_quote_words": 0
+    },
+    {
+      "id": "R1b",
+      "title": "Function calling with Gemma 4",
+      "authors_or_owner": "Google",
+      "source_type": "official_api_documentation",
+      "url": "https://ai.google.dev/gemma/docs/capabilities/text/function-calling-gemma4",
+      "retrieval_reference": "turn99view1",
+      "version_or_venue": "live documentation",
+      "claim_scope": "Host validates and executes tool calls; model does not execute functions itself.",
+      "accessed_utc_date": "2026-11-12",
+      "primary_source": true,
+      "direct_quote_words": 0
+    },
+    {
+      "id": "R1c",
+      "title": "Gemma 4 Prompt Formatting",
+      "authors_or_owner": "Google",
+      "source_type": "official_format_documentation",
+      "url": "https://ai.google.dev/gemma/docs/core/prompt-formatting-gemma4",
+      "retrieval_reference": "turn99view2",
+      "version_or_venue": "live documentation",
+      "claim_scope": "Dedicated tool lifecycle delimiters and processor/template conventions.",
+      "accessed_utc_date": "2026-11-12",
+      "primary_source": true,
+      "direct_quote_words": 0
+    },
+    {
+      "id": "R2",
+      "title": "SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering",
+      "authors_or_owner": "John Yang et al.",
+      "source_type": "conference_proceedings",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/5a7c947568c1b1328ccc5230172e1e7c-Abstract-Conference.html",
+      "retrieval_reference": "turn111view0",
+      "version_or_venue": "NeurIPS 2024; DOI 10.52202/079017-1601",
+      "claim_scope": "Interface design affects agent behavior; runtime correctness is a narrower endpoint.",
+      "accessed_utc_date": "2026-11-12",
+      "primary_source": true,
+      "direct_quote_words": 0
+    },
+    {
+      "id": "R3",
+      "title": "Repoformer: Selective Retrieval for Repository-Level Code Completion",
+      "authors_or_owner": "Di Wu et al.",
+      "source_type": "conference_proceedings",
+      "url": "https://proceedings.mlr.press/v235/wu24a.html",
+      "retrieval_reference": "turn110view0",
+      "version_or_venue": "ICML 2024; PMLR 235:53270-53290",
+      "claim_scope": "Learned selective retrieval is prior art and distinct from artifact validity.",
+      "accessed_utc_date": "2026-11-12",
+      "primary_source": true,
+      "direct_quote_words": 0
+    },
+    {
+      "id": "R4",
+      "title": "When Retrieval Hurts Code Completion: A Diagnostic Study of Stale Repository Context",
+      "authors_or_owner": "Haojun Weng et al.",
+      "source_type": "author_preprint",
+      "url": "https://arxiv.org/abs/2605.14478v1",
+      "retrieval_reference": "turn110view3",
+      "version_or_venue": "v1; 2026-05-14; journal submission, not verified acceptance",
+      "claim_scope": "Direct prior art on stale repository snippets; small diagnostic dataset, not a general theorem.",
+      "accessed_utc_date": "2026-11-12",
+      "primary_source": true,
+      "direct_quote_words": 0
+    },
+    {
+      "id": "R5",
+      "title": "SWE-Pruner: Self-Adaptive Context Pruning for Coding Agents",
+      "authors_or_owner": "Yuhang Wang et al.",
+      "source_type": "author_preprint",
+      "url": "https://arxiv.org/abs/2601.16746v4",
+      "retrieval_reference": "turn111view2",
+      "version_or_venue": "v4; 2026-05-07",
+      "claim_scope": "Task-conditioned source-line pruning changes model context, unlike transport-only encoding.",
+      "accessed_utc_date": "2026-11-12",
+      "primary_source": true,
+      "direct_quote_words": 0
+    },
+    {
+      "id": "R6",
+      "title": "Build Systems à la Carte",
+      "authors_or_owner": "Andrey Mokhov; Neil Mitchell; Simon Peyton Jones",
+      "source_type": "author_hosted_conference_paper",
+      "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2018/03/build-systems-final.pdf",
+      "retrieval_reference": "turn112view0",
+      "version_or_venue": "ICFP 2018; PACMPL 2, Article 79; DOI 10.1145/3236774",
+      "claim_scope": "Scheduling/rebuilding separation and dependency-aware build correctness. Keep distinct from expanded 2020 version.",
+      "accessed_utc_date": "2026-11-12",
+      "primary_source": true,
+      "direct_quote_words": 0
+    },
+    {
+      "id": "R7",
+      "title": "Adapton: Composable, Demand-Driven Incremental Computation",
+      "authors_or_owner": "Matthew A. Hammer; Khoo Yit Phang; Michael Hicks; Jeffrey S. Foster",
+      "source_type": "author_project_paper",
+      "url": "https://matthewhammer.org/adapton/",
+      "retrieval_reference": "turn110view1",
+      "version_or_venue": "PLDI 2014; DOI 10.1145/2594291.2594324",
+      "claim_scope": "Demanded computation graphs and observer separation are prior art.",
+      "accessed_utc_date": "2026-11-12",
+      "primary_source": true,
+      "direct_quote_words": 0
+    },
+    {
+      "id": "R8",
+      "title": "Skyframe",
+      "authors_or_owner": "Bazel",
+      "source_type": "official_system_documentation",
+      "url": "https://bazel.build/reference/skyframe",
+      "retrieval_reference": "turn110view2",
+      "version_or_venue": "live documentation",
+      "claim_scope": "Immutable dependency nodes; unregistered reads undermine correctness; filesystem namespace observations matter.",
+      "accessed_utc_date": "2026-11-12",
+      "primary_source": true,
+      "direct_quote_words": 0
+    },
+    {
+      "id": "S1",
+      "title": "RepoCoder: Repository-Level Code Completion Through Iterative Retrieval and Generation",
+      "authors_or_owner": "Fengji Zhang et al.",
+      "source_type": "conference_proceedings",
+      "url": "https://aclanthology.org/2023.emnlp-main.151/",
+      "retrieval_reference": "turn112view1",
+      "version_or_venue": "EMNLP 2023; DOI 10.18653/v1/2023.emnlp-main.151",
+      "claim_scope": "Supplement: iterative retrieval baseline.",
+      "accessed_utc_date": "2026-11-12",
+      "primary_source": true,
+      "direct_quote_words": 0
+    },
+    {
+      "id": "S2",
+      "title": "Demystifying LLM-based Software Engineering Agents",
+      "authors_or_owner": "Chunqiu Steven Xia; Yinlin Deng; Soren Dunn; Lingming Zhang",
+      "source_type": "conference_program_and_author_paper",
+      "url": "https://conf.researchr.org/details/fse-2025/fse-2025-research-papers/85/Demystifying-LLM-based-Software-Engineering-Agents",
+      "retrieval_reference": "turn98search3",
+      "version_or_venue": "FSE 2025; DOI 10.1145/3715754",
+      "claim_scope": "Supplement: Agentless localization, repair, and validation baseline.",
+      "accessed_utc_date": "2026-11-12",
+      "primary_source": true,
+      "direct_quote_words": 0
+    },
+    {
+      "id": "S3",
+      "title": "Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models",
+      "authors_or_owner": "Qizheng Zhang et al.",
+      "source_type": "author_preprint",
+      "url": "https://arxiv.org/abs/2510.04618v3",
+      "retrieval_reference": "turn111view3",
+      "version_or_venue": "v3; 2026-03-29; primary record identifies ICLR 2026",
+      "claim_scope": "Supplement: evolving context strategies, distinct from exact artifact identity.",
+      "accessed_utc_date": "2026-11-12",
+      "primary_source": true,
+      "direct_quote_words": 0
+    },
+    {
+      "id": "S4",
+      "title": "Evaluating AGENTS.md: Are Repository-Level Context Files Helpful for Coding Agents?",
+      "authors_or_owner": "Thibaud Gloaguen; Niels Mündler-Sasahara; Mark Niklas Müller; Veselin Raychev; Martin Vechev",
+      "source_type": "author_preprint",
+      "url": "https://arxiv.org/abs/2602.11988v3",
+      "retrieval_reference": "turn112view2",
+      "version_or_venue": "v3; 2026-09-29",
+      "claim_scope": "Supplement: latest abstract cautions context files do not generally improve task success. Do not substitute stronger old abstract wording.",
+      "accessed_utc_date": "2026-11-12",
+      "primary_source": true,
+      "direct_quote_words": 0
+    },
+    {
+      "id": "S5",
+      "title": "When Instruction Files Go Stale: Documentation Debt and Hidden Cost in Coding Agents",
+      "authors_or_owner": "Tural Mehtiyev; Biruk Tadesse; Lawrence Arkoh; Wesley Assunção",
+      "source_type": "author_preprint",
+      "url": "https://arxiv.org/abs/2611.09802v1",
+      "retrieval_reference": "turn112view3",
+      "version_or_venue": "v1; 2026-11-06",
+      "claim_scope": "Supplement: stale instructions can impose costs; snapshot identity does not repair their semantics.",
+      "accessed_utc_date": "2026-11-12",
+      "primary_source": true,
+      "direct_quote_words": 0
+    },
+    {
+      "id": "S6",
+      "title": "Google - The Gemma 4 Developer Agent Competition",
+      "authors_or_owner": "Google/Kaggle",
+      "source_type": "official_competition_overview",
+      "url": "https://www.kaggle.com/competitions/gemma-4-developer-agent/overview",
+      "retrieval_reference": "turn94search5",
+      "version_or_venue": "current prediction-track overview",
+      "claim_scope": "Allowed harness tools and sandboxed skills constrain any integration. Not a substitute for paper-track rules.",
+      "accessed_utc_date": "2026-11-12",
+      "primary_source": true,
+      "direct_quote_words": 0
+    }
+  ],
+  "local_evidence": [
+    {
+      "path": "/workspace/scratch/8dfa229f9a87/deliverables_kaggle_suffice_2026/Suffice_Gemma4_Paper_Packet.zip",
+      "bytes": 4414498,
+      "sha256": "bfd32da30fe9ed6ee86c199e4cc453985bd5e7a9e33db3b08259d4b55d474e53"
+    },
+    {
+      "path": "/workspace/scratch/8dfa229f9a87/suffice_v0_13/REPORT.md",
+      "bytes": 24303,
+      "sha256": "ae4537b26f59d421606ad3914377217be75eb4c03c03b8c7b7940efa420d254f"
+    },
+    {
+      "path": "/workspace/scratch/8dfa229f9a87/suffice_v0_13/RESEARCH_DOSSIER.md",
+      "bytes": 15825,
+      "sha256": "8e042f60457f6247039869ec15b5b48c569c577a45c42854aa7db9bd96952d85"
+    },
+    {
+      "path": "/workspace/scratch/8dfa229f9a87/suffice_v0_13/results/transport_v0_13/SUMMARY.json",
+      "bytes": 270902,
+      "sha256": "b8923214bf1209b681e870fb305294ef00a90d044c829ab4594cc8c087469a04"
+    },
+    {
+      "path": "/workspace/scratch/8dfa229f9a87/suffice_v0_13/docs/binary_protocol_v0_13.md",
+      "bytes": 11281,
+      "sha256": "f4e1488a5ad5faefa4d1127765274ad3a868be49238106d2e46d8baf6aad863c"
+    },
+    {
+      "path": "/workspace/scratch/8dfa229f9a87/suffice_v0_13/scripts/catalog_client.py",
+      "bytes": 20673,
+      "sha256": "f0282195bf939aded456aa54258bcf0c237ccd9255660d665875feaaf6680495"
+    }
+  ],
+  "limits": [
+    "Not an exhaustive novelty or patent search",
+    "Live model documentation may change; pin actual artifacts for an experiment",
+    "Preprints are identified separately from accepted proceedings",
+    "A matching generation is not automatically the latest workspace",
+    "Client structure checks do not authenticate arbitrary validly framed body substitutions",
+    "Transport byte reduction does not imply model-token reduction"
+  ],
+  "new_integration_evidence": [
+    {
+      "path": "/workspace/scratch/8dfa229f9a87/kaggle_revision_v2/integration/repository_read_bridge.py",
+      "bytes": 9515,
+      "sha256": "2f35166047410ddf30fe140a90de93d8a7b3c8544f4a979ce83d0f048bb2c1d1"
+    },
+    {
+      "path": "/workspace/scratch/8dfa229f9a87/kaggle_revision_v2/integration/test_repository_read_bridge.py",
+      "bytes": 14327,
+      "sha256": "d28e41e2d39b66f2e8eabf4cf9ab4a93975bd71be771e6b2c03d4c99fca456ff"
+    },
+    {
+      "path": "/workspace/scratch/8dfa229f9a87/kaggle_revision_v2/integration/repository_read_schema.json",
+      "bytes": 1395,
+      "sha256": "089efb45582cc43d03996328247cd4cc09f8c6b7499311c621950b3d61310676"
+    },
+    {
+      "path": "/workspace/scratch/8dfa229f9a87/kaggle_revision_v2/integration/validation_native/RESULT.json",
+      "bytes": 14492,
+      "sha256": "aecb7e7dcd48bc4772db252d6e0d508cdbf1efc909ea102a1f1b2d104c9e0f4a"
+    }
+  ]
+}

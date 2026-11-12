@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "review_method": "Every final PNG page was visually inspected by the primary assistant",
+  "pages": 5,
+  "pdf_sha256": "eb7159144dd0fd4bfd237b8f8bd7bcbf1f96066aff7f52008f5f4c4f7c09c4d2",
+  "findings": {
+    "clipping": false,
+    "overlap": false,
+    "missing_glyphs": false,
+    "split_tables": false,
+    "unreadable_figure": false,
+    "references_incomplete": false
+  },
+  "pages_reviewed": [
+    {
+      "page": 1,
+      "png_sha256": "6b76fe89b9dc9eecab3cb3e1a0e7ba1ec5d105093782616a3082c799b2e6afca"
+    },
+    {
+      "page": 2,
+      "png_sha256": "9918fbc71f46641fa76fcfee35b08fe0807f966262c5ac90d1e5a4afcef8547a"
+    },
+    {
+      "page": 3,
+      "png_sha256": "e771086d0d179ea91c537f3baff589074b52f37360fca4967752488908e52cd1"
+    },
+    {
+      "page": 4,
+      "png_sha256": "48a190dd7dc8e99d08ec4d4fb97ebcae9e7bdc49d7ed90493706e12956ce8276"
+    },
+    {
+      "page": 5,
+      "png_sha256": "adb80630e87ddf16622b2058936ae3166724f1db34755bdd77d6cae9a383c386"
+    }
+  ]
+}

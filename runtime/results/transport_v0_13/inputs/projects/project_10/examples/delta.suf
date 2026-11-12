@@ -1,0 +1,6 @@
+# Exact absolute change from the preceding sample, channel zero.
+input current 0 0
+input previous 0 -1
+sub difference current previous
+abs magnitude difference
+output magnitude > 100000

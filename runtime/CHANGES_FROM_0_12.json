@@ -1,0 +1,87 @@
+{
+  "added": [
+    {
+      "path": "apps/catalog/wire.hpp",
+      "sha256": "064d9a4f9e9bb993d8f1afdbf592e033af7f883046c6b631e52abe714b53002d"
+    },
+    {
+      "path": "scripts/benchmark_transport_v0_13.py",
+      "sha256": "edd889bc32902304a79c2e719174841cc505567281272e703b4cd55831f6a3c9"
+    },
+    {
+      "path": "scripts/package_release_v0_13.py",
+      "sha256": "9dd7845949f8fb1288e3b71a2cc67a81c3588efba3dbce9f3b7e7196a3992461"
+    },
+    {
+      "path": "scripts/plot_transport_v0_13.py",
+      "sha256": "3d066872147cdb8b243a5d8398dd57b3502a7a39dead64bf4f1c0d8ec10525d3"
+    },
+    {
+      "path": "scripts/run_windows_v0_13.ps1",
+      "sha256": "94323eab6c9ae9f4305d98a21661d1d76b4a3b7c4935bfa3cd54ade3e0e1bb0b"
+    },
+    {
+      "path": "tests/catalog_wire_main.cpp",
+      "sha256": "5cdc7ea23404b8ef5f0214be89a6bc0651d3497992c64575eb07563708565fe1"
+    },
+    {
+      "path": "tests/test_catalog_framing.py",
+      "sha256": "ce3c84f44353420fc727591526a339d3f17d9594aff07727842dafb5e6d5512c"
+    },
+    {
+      "path": "tests/test_transport_integration.py",
+      "sha256": "2436489bd89d767a2eab67c7aa2dff55745569d25a58bdcb03d19b09ce0ab7cb"
+    }
+  ],
+  "baseline_archive_sha256": "da69f1f305452e1cffd89ddd50aea1009ba43ab1f7eee3e52624c2b60a170ec8",
+  "modified": [
+    {
+      "after_sha256": "fa2ba83a7e597e6c762f3d7b0657a5c3cae453cde3c01e512f89e3436f7f366a",
+      "before_sha256": "d3e74bf6ab2350fc3e08b246d170471634b3a2934fe337764333062780a1a33e",
+      "path": "CMakeLists.txt"
+    },
+    {
+      "after_sha256": "c80c80e3550a9da03f0fa4c54f7872c4f69c0a494eabbe90a87628c56372d5b5",
+      "before_sha256": "472cd7d01cbd6ee4190c39b0297ee17be9fac150d88e1c9ffaf66459d244c3a0",
+      "path": "apps/catalog/main.cpp"
+    },
+    {
+      "after_sha256": "90166a76d080246bd9b5b655603885f43b27658d018bdb1bced807cc87059bff",
+      "before_sha256": "eb7da4fd45bf58cf8162820333d0fe0b70ef9b60bd7f80ceed5441b15988cecc",
+      "path": "apps/payload/main.cpp"
+    },
+    {
+      "after_sha256": "23ce5b268e808d082f80fb811a9ce212298a720ed6236ea324a1f2b489894613",
+      "before_sha256": "6eaa43c861b27b81a6c77a424b0f55e09e184e827d819b955fd909a68c5b43f3",
+      "path": "scripts/artifact_catalog.py"
+    },
+    {
+      "after_sha256": "5a05fde965ecdb4901f99d5d381a0d0b0dd93e76d8618917ddb7d44b05bf3e70",
+      "before_sha256": "5cedda64c8ccd694190c625bce3be16608a22b0f3bef591fa9daf07a0ffc355f",
+      "path": "scripts/build_payload.py"
+    },
+    {
+      "after_sha256": "f0282195bf939aded456aa54258bcf0c237ccd9255660d665875feaaf6680495",
+      "before_sha256": "cf82338fbea753503df6f4842c10cc0240ce548cd5e48f52561cb1654031e162",
+      "path": "scripts/catalog_client.py"
+    },
+    {
+      "after_sha256": "fc1c00033946e3372283ae775b650cf0fffab370aee800fd3c425546b6162bf7",
+      "before_sha256": "07f13d86e6fb4f5c69482dc62bc9460f28beee6593687cfa44a64f284de6bde7",
+      "path": "src/main.cpp"
+    },
+    {
+      "after_sha256": "13729dab350ceaef22fed03c4b9efb29f6254779c7afb7fb32e8ed0f45100cf4",
+      "before_sha256": "71dd1baf5b48b517fb52e587f3e35275bfa297941765ea9dcb8b9838ae31bdfb",
+      "path": "tests/test_catalog_integration.py"
+    },
+    {
+      "after_sha256": "85e0a793a3806c2132656b58cf9d7cd0fe5c223a34141db3ceba521067f1a939",
+      "before_sha256": "2341683af77bda564decd26dd41100d7ad1a6ac46eb0cc658e6ec53b186922b5",
+      "path": "tests/test_worker_protocol.py"
+    }
+  ],
+  "removed": [],
+  "scope": "Active source/scripts/tests/examples plus CMakeLists.txt and LICENSE; documents/evidence separately inventoried",
+  "unchanged_files": 149
+}

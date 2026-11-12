@@ -1,0 +1,7 @@
+# Both channels must exceed a magnitude threshold; exact on full int32 input.
+input x 0 0
+input y 1 0
+abs magnitude_x x
+abs magnitude_y y
+min both magnitude_x magnitude_y
+output both > 500000000

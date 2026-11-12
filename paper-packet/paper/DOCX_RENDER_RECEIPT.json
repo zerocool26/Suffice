@@ -1,0 +1,13 @@
+{
+  "status": "created",
+  "source_file": "Suffice_Kaggle_Writeup.md",
+  "source_sha256": "8596948fc0305b0acaeb147cd601ecdbc9c88935f8b54456eec180a8a5277b19",
+  "docx_file": "Suffice_Paper.docx",
+  "docx_sha256": "d938588cf05f05f21e000c4cc5510516695587398fdebf82646ae32de1bfb8b5",
+  "native_math_displays": 3,
+  "canonical_math_blocks": 3,
+  "tables": 2,
+  "visual_review": "passed; all five final pages inspected",
+  "byline": "omitted; Kaggle account attribution and author declarations require owner review",
+  "pdf_sha256": "eb7159144dd0fd4bfd237b8f8bd7bcbf1f96066aff7f52008f5f4c4f7c09c4d2"
+}

@@ -1,0 +1,370 @@
+{
+  "builds": {
+    "release": {
+      "built_binaries_checked": 9,
+      "commands_checked": 51,
+      "executable_checks": 10,
+      "new_support_compilation_ms": 0.0,
+      "project_inputs_checked": 74,
+      "scope": "Direct builder evidence; implicit system dependencies are not fully hashed; CMake and Windows not executed",
+      "status": "passed",
+      "support_archive_sha256": "68e48e33adfe9ef695da4664247b5ee00ee840455ee13d7f3c766233b6260744",
+      "support_cache_hit": true,
+      "support_cache_key": "efcabcf06f19df5942aaea4a8c2ba2a840315669e2dfd73acacd1f549fb2078e",
+      "support_inputs_checked": 36
+    },
+    "sanitize": {
+      "built_binaries_checked": 9,
+      "commands_checked": 51,
+      "executable_checks": 10,
+      "new_support_compilation_ms": 0.0,
+      "project_inputs_checked": 74,
+      "scope": "Direct builder evidence; implicit system dependencies are not fully hashed; CMake and Windows not executed",
+      "status": "passed",
+      "support_archive_sha256": "3925b205213b4ef6b58a532d58a4020f467d394d83ab4c38340719c63752f38e",
+      "support_cache_hit": true,
+      "support_cache_key": "edeeb3f86581e92baa3ffe611f371ae704a8beac0b6c744b2acb6ef59d7aa7e9",
+      "support_inputs_checked": 36
+    }
+  },
+  "cmake_route_executed": false,
+  "experiment": {
+    "frozen_source_files": 78,
+    "input_files": 187,
+    "repeats": 10,
+    "summary_sha256": "b8923214bf1209b681e870fb305294ef00a90d044c829ab4594cc8c087469a04",
+    "totals": {
+      "complete_output_checks": 4840,
+      "processes": 100,
+      "result_admissions": 1240,
+      "result_evictions": 240,
+      "result_hits": 1680,
+      "verified_bytes": 419571140,
+      "verified_rows": 23480,
+      "wire_bytes_received": 639715576,
+      "wire_bytes_sent": 1035660
+    }
+  },
+  "gates": {
+    "client_framing": {
+      "complete_output_checks": null,
+      "counters": {
+        "expected_protocol_rejections": 267,
+        "fragmentation_positions": 159,
+        "real_pipe_eof_checks": 2,
+        "truncation_positions": 155,
+        "validated_terminal_responses": 192
+      },
+      "groups": null,
+      "path": "results/client_framing/RESULT.json",
+      "sha256": "593412598cb902039295f5990197a19bd84cd92d30b2a4af1e912b0f60e9b9ae",
+      "status": "passed",
+      "test_cases": 26
+    },
+    "integration_release_binary": {
+      "complete_output_checks": null,
+      "counters": {
+        "client_failure_checks": 9,
+        "corruptions_rejected": 14,
+        "full_output_calls": 34,
+        "hash_only_calls": 1,
+        "native_rejections": 35,
+        "plaintext_bytes_compared": 1224,
+        "plaintext_rows_compared": 181,
+        "producer_publications": 4,
+        "producer_reuses": 1,
+        "successful_native_commands": 114
+      },
+      "groups": [
+        {
+          "name": "exact_complete_output_predicates_ranges_and_cache_identity",
+          "status": "passed"
+        },
+        {
+          "name": "generation_publication_precise_invalidation_old_leases_and_reclamation",
+          "status": "passed"
+        },
+        {
+          "name": "revision_tombstones_and_protocol_error_recovery",
+          "status": "passed"
+        },
+        {
+          "name": "global_cache_entry_and_byte_pressure_and_zero_byte_results",
+          "status": "passed"
+        },
+        {
+          "name": "snapshot_and_metadata_budgets_include_pinned_retired_owners",
+          "status": "passed"
+        },
+        {
+          "name": "native_generation_corruption_rejection_and_atomic_failed_admission",
+          "status": "passed"
+        },
+        {
+          "name": "client_reentrancy_and_callback_failure_protocol_cleanup",
+          "status": "passed"
+        }
+      ],
+      "path": "results/integration_release_binary/RESULT.json",
+      "sha256": "34dad8c146894639faa16be1596ab4998371a8e1cd1d1fe8ac10df649622bd61",
+      "status": "passed",
+      "test_cases": null
+    },
+    "integration_release_jsonl": {
+      "complete_output_checks": null,
+      "counters": {
+        "client_failure_checks": 9,
+        "corruptions_rejected": 14,
+        "full_output_calls": 34,
+        "hash_only_calls": 1,
+        "native_rejections": 35,
+        "plaintext_bytes_compared": 1224,
+        "plaintext_rows_compared": 181,
+        "producer_publications": 4,
+        "producer_reuses": 1,
+        "successful_native_commands": 114
+      },
+      "groups": [
+        {
+          "name": "exact_complete_output_predicates_ranges_and_cache_identity",
+          "status": "passed"
+        },
+        {
+          "name": "generation_publication_precise_invalidation_old_leases_and_reclamation",
+          "status": "passed"
+        },
+        {
+          "name": "revision_tombstones_and_protocol_error_recovery",
+          "status": "passed"
+        },
+        {
+          "name": "global_cache_entry_and_byte_pressure_and_zero_byte_results",
+          "status": "passed"
+        },
+        {
+          "name": "snapshot_and_metadata_budgets_include_pinned_retired_owners",
+          "status": "passed"
+        },
+        {
+          "name": "native_generation_corruption_rejection_and_atomic_failed_admission",
+          "status": "passed"
+        },
+        {
+          "name": "client_reentrancy_and_callback_failure_protocol_cleanup",
+          "status": "passed"
+        }
+      ],
+      "path": "results/integration_release_jsonl/RESULT.json",
+      "sha256": "0e3297059854d33d797845ed22510504325879399df97bdb377042a3754567ba",
+      "status": "passed",
+      "test_cases": null
+    },
+    "integration_sanitize_binary": {
+      "complete_output_checks": null,
+      "counters": {
+        "client_failure_checks": 9,
+        "corruptions_rejected": 14,
+        "full_output_calls": 34,
+        "hash_only_calls": 1,
+        "native_rejections": 35,
+        "plaintext_bytes_compared": 1224,
+        "plaintext_rows_compared": 181,
+        "producer_publications": 4,
+        "producer_reuses": 1,
+        "successful_native_commands": 114
+      },
+      "groups": [
+        {
+          "name": "exact_complete_output_predicates_ranges_and_cache_identity",
+          "status": "passed"
+        },
+        {
+          "name": "generation_publication_precise_invalidation_old_leases_and_reclamation",
+          "status": "passed"
+        },
+        {
+          "name": "revision_tombstones_and_protocol_error_recovery",
+          "status": "passed"
+        },
+        {
+          "name": "global_cache_entry_and_byte_pressure_and_zero_byte_results",
+          "status": "passed"
+        },
+        {
+          "name": "snapshot_and_metadata_budgets_include_pinned_retired_owners",
+          "status": "passed"
+        },
+        {
+          "name": "native_generation_corruption_rejection_and_atomic_failed_admission",
+          "status": "passed"
+        },
+        {
+          "name": "client_reentrancy_and_callback_failure_protocol_cleanup",
+          "status": "passed"
+        }
+      ],
+      "path": "results/integration_sanitize_binary/RESULT.json",
+      "sha256": "c4cbe29639f4d8af4bedb2075acb5ad825d81e391d289b06e7681e060ff81768",
+      "status": "passed",
+      "test_cases": null
+    },
+    "integration_sanitize_jsonl": {
+      "complete_output_checks": null,
+      "counters": {
+        "client_failure_checks": 9,
+        "corruptions_rejected": 14,
+        "full_output_calls": 34,
+        "hash_only_calls": 1,
+        "native_rejections": 35,
+        "plaintext_bytes_compared": 1224,
+        "plaintext_rows_compared": 181,
+        "producer_publications": 4,
+        "producer_reuses": 1,
+        "successful_native_commands": 114
+      },
+      "groups": [
+        {
+          "name": "exact_complete_output_predicates_ranges_and_cache_identity",
+          "status": "passed"
+        },
+        {
+          "name": "generation_publication_precise_invalidation_old_leases_and_reclamation",
+          "status": "passed"
+        },
+        {
+          "name": "revision_tombstones_and_protocol_error_recovery",
+          "status": "passed"
+        },
+        {
+          "name": "global_cache_entry_and_byte_pressure_and_zero_byte_results",
+          "status": "passed"
+        },
+        {
+          "name": "snapshot_and_metadata_budgets_include_pinned_retired_owners",
+          "status": "passed"
+        },
+        {
+          "name": "native_generation_corruption_rejection_and_atomic_failed_admission",
+          "status": "passed"
+        },
+        {
+          "name": "client_reentrancy_and_callback_failure_protocol_cleanup",
+          "status": "passed"
+        }
+      ],
+      "path": "results/integration_sanitize_jsonl/RESULT.json",
+      "sha256": "1797ecf3ecb828b48a10c0523d84f0c320376e456e1e483522133b54e2ac5a45",
+      "status": "passed",
+      "test_cases": null
+    },
+    "producer": {
+      "complete_output_checks": null,
+      "counters": {
+        "expected_rejections": 33,
+        "interrupted_commits_preserved": 1,
+        "no_change_reuses": 8,
+        "publications": 22,
+        "row_bytes_compared": 4356,
+        "rows_compared": 82,
+        "uncertain_candidates_retained": 1
+      },
+      "groups": null,
+      "path": "results/producer/RESULT.json",
+      "sha256": "86fcc7b872596c2156bb896ba502ca18d45d1949b34f4edc5e37a2dce0d896c3",
+      "status": "passed",
+      "test_cases": 22
+    },
+    "transport_integration_release": {
+      "complete_output_checks": null,
+      "counters": {
+        "complete_output_checks": 28,
+        "hash_checks": 4,
+        "preflight_rejections": 8,
+        "processes": 4,
+        "quit_checks": 4,
+        "streaming_checks": 4,
+        "verified_bytes": 26215296,
+        "verified_rows": 92,
+        "wire_formula_checks": 28
+      },
+      "groups": null,
+      "path": "results/transport_integration_release/RESULT.json",
+      "sha256": "84a9a182f33da1f7a4b9c7381eb11db7037f464a665b196c928c9fb830697b21",
+      "status": "passed",
+      "test_cases": null
+    },
+    "transport_integration_sanitize": {
+      "complete_output_checks": null,
+      "counters": {
+        "complete_output_checks": 28,
+        "hash_checks": 4,
+        "preflight_rejections": 8,
+        "processes": 4,
+        "quit_checks": 4,
+        "streaming_checks": 4,
+        "verified_bytes": 26215296,
+        "verified_rows": 92,
+        "wire_formula_checks": 28
+      },
+      "groups": null,
+      "path": "results/transport_integration_sanitize/RESULT.json",
+      "sha256": "69226ab07d21a5684f9a0a14ca8acd3367d4d266b6355010e6d758351bddd20b",
+      "status": "passed",
+      "test_cases": null
+    },
+    "worker_binary": {
+      "complete_output_checks": 6,
+      "counters": {},
+      "groups": null,
+      "path": "results/worker_binary/RESULT.json",
+      "sha256": "60a8143e8b9edd5998a161e2aaa1a7ab914a877a5c77adeb5d9baf86e5a23e51",
+      "status": "passed",
+      "test_cases": null
+    },
+    "worker_jsonl": {
+      "complete_output_checks": 6,
+      "counters": {},
+      "groups": null,
+      "path": "results/worker_jsonl/RESULT.json",
+      "sha256": "fea94f052a3de2e370dc566868d70a719405a2fff17a6a93902b680a4cdc80fc",
+      "status": "passed",
+      "test_cases": null
+    }
+  },
+  "independent_reviews": {
+    "release_validation_review_v0_13": {
+      "path": "research/release_validation_review_v0_13.json",
+      "sha256": "c921c281d4a255b05ca7bc45d14d08b4da981857eeacdddc78ab1963b5ff41b9",
+      "status": "passed_with_scope_limits"
+    },
+    "report_review_v0_13": {
+      "path": "research/report_review_v0_13.json",
+      "sha256": "c96f84281463548b667f753f76369a993f0d8e5ffbfae154205aea1a64171041",
+      "status": "passed"
+    },
+    "results_review_v0_13": {
+      "path": "research/results_review_v0_13.json",
+      "sha256": "162b3f0f3c851d66416a2f32d8da31ff8c8e122b9058685e42f7dea3fb3215fe",
+      "status": "passed"
+    }
+  },
+  "limitations": [
+    "Overlapping gate counts are not independent performance trials",
+    "Sanitizer leak detection disabled; installed codec not instrumented",
+    "Compiler/default system headers and runtime dependencies are not a fully hermetic toolchain",
+    "Core archives reused under verified source/compiler identities; new support compilation was zero",
+    "Portable retained-evidence audit and archive closure are recorded separately"
+  ],
+  "native_windows_tested": false,
+  "native_wire": {
+    "checks": 125,
+    "expected_rejections": 129,
+    "groups": 9,
+    "poison_cases": 36,
+    "status": "passed"
+  },
+  "release": "0.13.0",
+  "schema_version": 1,
+  "scope": "Final executed gate receipts, current input/binary checks and retained experiment; no tests rerun for this summary",
+  "status": "passed"
+}

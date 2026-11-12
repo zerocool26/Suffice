@@ -1,0 +1,23 @@
+# Local development outputs; retained historical evidence stays tracked.
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+.idea/
+.vs/
+*.o
+*.obj
+*.a
+*.lib
+*.pdb
+/build/
+/runtime/build/local*/
+/runtime/results/local*/
+/paper-packet/verification/local*
+/paper-packet/integration/validation_new/
+/paper-packet/integration/validation_local*/

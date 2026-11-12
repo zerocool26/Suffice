@@ -1,0 +1,167 @@
+{
+  "corruptions": [
+    {
+      "error": "generation component SHA-256 mismatch: features.i32",
+      "name": "raw_component_hash",
+      "status": "rejected",
+      "store": "corruptions/raw_component_hash"
+    },
+    {
+      "error": "invalid CURRENT generation pointer",
+      "name": "bad_current",
+      "status": "rejected",
+      "store": "corruptions/bad_current"
+    },
+    {
+      "error": "invalid generation manifest field/order",
+      "name": "manifest_field_order",
+      "status": "rejected",
+      "store": "corruptions/manifest_field_order"
+    },
+    {
+      "error": "artifact paths must be canonical relative paths",
+      "name": "metadata_traversal",
+      "status": "rejected",
+      "store": "corruptions/metadata_traversal"
+    },
+    {
+      "error": "invalid artifact path encoding or extent",
+      "name": "metadata_invalid_utf8",
+      "status": "rejected",
+      "store": "corruptions/metadata_invalid_utf8"
+    },
+    {
+      "error": "artifact paths are not strictly byte-sorted",
+      "name": "metadata_unsorted",
+      "status": "rejected",
+      "store": "corruptions/metadata_unsorted"
+    },
+    {
+      "error": "artifact paths are not strictly byte-sorted",
+      "name": "metadata_duplicate",
+      "status": "rejected",
+      "store": "corruptions/metadata_duplicate"
+    },
+    {
+      "error": "artifact path exceeds encoded byte cap",
+      "name": "metadata_path_over_4096",
+      "status": "rejected",
+      "store": "corruptions/metadata_path_over_4096"
+    },
+    {
+      "error": "extra artifact metadata rows",
+      "name": "metadata_extra_row",
+      "status": "rejected",
+      "store": "corruptions/metadata_extra_row"
+    },
+    {
+      "error": "missing metadata field",
+      "name": "metadata_newline_amplification",
+      "status": "rejected",
+      "store": "corruptions/metadata_newline_amplification"
+    },
+    {
+      "error": "artifact metadata/body identity mismatch",
+      "name": "metadata_body_digest",
+      "status": "rejected",
+      "store": "corruptions/metadata_body_digest"
+    },
+    {
+      "error": "payload: decompression failed: Restored data doesn't match checksum",
+      "name": "payload_body_corrupt_rehashed",
+      "status": "rejected",
+      "store": "corruptions/payload_body_corrupt_rehashed"
+    },
+    {
+      "error": "artifact feature semantics mismatch",
+      "name": "valid_checksums_wrong_semantics",
+      "status": "rejected",
+      "store": "corruptions/valid_checksums_wrong_semantics"
+    },
+    {
+      "error": "generation component is missing, linked, or wrong file type",
+      "name": "symlink_component",
+      "status": "rejected",
+      "store": "corruptions/symlink_component"
+    }
+  ],
+  "counters": {
+    "client_failure_checks": 9,
+    "corruptions_rejected": 14,
+    "full_output_calls": 34,
+    "hash_only_calls": 1,
+    "native_rejections": 35,
+    "plaintext_bytes_compared": 1224,
+    "plaintext_rows_compared": 181,
+    "producer_publications": 4,
+    "producer_reuses": 1,
+    "successful_native_commands": 114
+  },
+  "elapsed_ms": 151.07378299944685,
+  "groups": [
+    {
+      "name": "exact_complete_output_predicates_ranges_and_cache_identity",
+      "status": "passed"
+    },
+    {
+      "name": "generation_publication_precise_invalidation_old_leases_and_reclamation",
+      "status": "passed"
+    },
+    {
+      "name": "revision_tombstones_and_protocol_error_recovery",
+      "status": "passed"
+    },
+    {
+      "name": "global_cache_entry_and_byte_pressure_and_zero_byte_results",
+      "status": "passed"
+    },
+    {
+      "name": "snapshot_and_metadata_budgets_include_pinned_retired_owners",
+      "status": "passed"
+    },
+    {
+      "name": "native_generation_corruption_rejection_and_atomic_failed_admission",
+      "status": "passed"
+    },
+    {
+      "name": "client_reentrancy_and_callback_failure_protocol_cleanup",
+      "status": "passed"
+    }
+  ],
+  "input_inventory_sha256": "19bd3f527b63831ae9a2190d956dda35e582674f64b92804ec0028ae617a5fa2",
+  "inputs_after": {
+    "/workspace/scratch/8dfa229f9a87/suffice_v0_13/build/transport_release/suffice": "e4e2f3563530effd1efffdfa784fa208096f748ccd9b3a20a1694f0f7bc0b891",
+    "/workspace/scratch/8dfa229f9a87/suffice_v0_13/build/transport_release/suffice_catalog": "b5b0c7a8d767441dfe023150f0f8d49fb223d4a669e61ea7896c7dd53ed62465",
+    "/workspace/scratch/8dfa229f9a87/suffice_v0_13/scripts/artifact_catalog.py": "23ce5b268e808d082f80fb811a9ce212298a720ed6236ea324a1f2b489894613",
+    "/workspace/scratch/8dfa229f9a87/suffice_v0_13/scripts/catalog_client.py": "f0282195bf939aded456aa54258bcf0c237ccd9255660d665875feaaf6680495",
+    "/workspace/scratch/8dfa229f9a87/suffice_v0_13/scripts/payload_store.py": "0c8069def2d10823a97ded825f46d5ae48aa4c64f69b02a5aeb447ad76cc12da",
+    "/workspace/scratch/8dfa229f9a87/suffice_v0_13/tests/test_catalog_integration.py": "13729dab350ceaef22fed03c4b9efb29f6254779c7afb7fb32e8ed0f45100cf4"
+  },
+  "inputs_before": {
+    "/workspace/scratch/8dfa229f9a87/suffice_v0_13/build/transport_release/suffice": "e4e2f3563530effd1efffdfa784fa208096f748ccd9b3a20a1694f0f7bc0b891",
+    "/workspace/scratch/8dfa229f9a87/suffice_v0_13/build/transport_release/suffice_catalog": "b5b0c7a8d767441dfe023150f0f8d49fb223d4a669e61ea7896c7dd53ed62465",
+    "/workspace/scratch/8dfa229f9a87/suffice_v0_13/scripts/artifact_catalog.py": "23ce5b268e808d082f80fb811a9ce212298a720ed6236ea324a1f2b489894613",
+    "/workspace/scratch/8dfa229f9a87/suffice_v0_13/scripts/catalog_client.py": "f0282195bf939aded456aa54258bcf0c237ccd9255660d665875feaaf6680495",
+    "/workspace/scratch/8dfa229f9a87/suffice_v0_13/scripts/payload_store.py": "0c8069def2d10823a97ded825f46d5ae48aa4c64f69b02a5aeb447ad76cc12da",
+    "/workspace/scratch/8dfa229f9a87/suffice_v0_13/tests/test_catalog_integration.py": "13729dab350ceaef22fed03c4b9efb29f6254779c7afb7fb32e8ed0f45100cf4"
+  },
+  "inputs_stable": true,
+  "invocation": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "/workspace/scratch/8dfa229f9a87/suffice_v0_13/tests/test_catalog_integration.py",
+    "--binary",
+    "build/transport_release/suffice_catalog",
+    "--packer",
+    "build/transport_release/suffice",
+    "--transport",
+    "binary",
+    "--output",
+    "results/integration_release_binary"
+  ],
+  "native_windows_tested": false,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "schema_version": 1,
+  "status": "passed",
+  "transport": "binary",
+  "validation_kind": "behavioral_integration_not_benchmark"
+}

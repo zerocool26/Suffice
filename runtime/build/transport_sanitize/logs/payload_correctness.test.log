@@ -1,0 +1,19 @@
+PASS payload complete binary outputs, all backends, slices and tails
+PASS payload independent physical bounds and true/false/unknown zone certificates
+PASS payload copied buffer and source-program independence
+PASS payload file-loaded snapshot survives source mutation and deletion
+PASS payload worker retains stable query and snapshot owners
+PASS payload complete-result cache and exact query/range identity
+PASS payload fused capture preserves complete outputs, tails, budgets and owner identity
+PASS payload fused capture preflights output and does not return partial candidates
+PASS payload signed offset halos use whole-snapshot boundaries
+PASS payload one-frame grammar, index extents and metadata admission
+PASS payload full versus on-demand body validation and failure recovery
+PASS payload feature pairing, range certificates, and snapshot budgets
+PASS payload output admission precedes callbacks and counts empty selected rows
+PASS payload empty datasets, empty payloads, constants and scratch reuse
+PASS payload invalid ranges, backend requests and null owners
+PASS payload sink failure leaves an exact prefix and worker remains reusable
+PASS payload independent concurrent workers share only immutable owners
+PAYLOAD_TEST_COUNTS {"groups":17,"pipeline_runs":370,"cache_replays":47,"rejections":65,"compared_rows":15261,"compared_bytes":740069,"feature_bound_checks":652,"certificate_row_checks":1615,"zstd_version":"1.5.7"}
+All payload pipeline tests passed.

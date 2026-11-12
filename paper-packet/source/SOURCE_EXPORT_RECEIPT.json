@@ -1,0 +1,9 @@
+{
+  "source_release": "Suffice_0_13_0.zip",
+  "source_sha256": "1cda9360c3d0d013309236a0720d13b7c3f01735a590761894a8bb68adb77205",
+  "source_bytes": 12612566,
+  "source_members": 721,
+  "previous_paper_packet_sha256": "bfd32da30fe9ed6ee86c199e4cc453985bd5e7a9e33db3b08259d4b55d474e53",
+  "source_and_previous_packet_unchanged": true,
+  "bridge_outside_frozen_measurement_source": true
+}

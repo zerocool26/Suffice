@@ -1,0 +1,28 @@
+PASS catalog two projects and exact complete cached output
+PASS catalog publication CAS, old leases and cache invalidation
+PASS catalog drop tombstones prevent absent-state ABA
+PASS catalog pinned snapshots block capacity until all aliases release
+PASS catalog snapshot sharing charges once; generation metadata stays distinct
+PASS catalog metadata and live-generation budget reject without replacing
+PASS catalog byte-based global LRU replaces multiple victims
+PASS catalog zero-byte results bounded by entry count
+PASS catalog oversized results execute without retention
+PASS catalog exact source and range keys; bypass; bounded plans
+PASS catalog worker release preserves prepared queries and cached output
+PASS catalog worker entry LRU evicts storage without discarding queries
+PASS catalog worker byte cap evicts complete unequal victim set
+PASS catalog oversized and disabled workers execute transiently
+PASS catalog worker exception cleanup enforces byte and entry caps
+PASS catalog worker allocation failure preserves prepared query
+PASS catalog capture and recompute strategies preserve complete output
+PASS catalog capture candidate allocation failure preserves delivered output and prior cache
+PASS catalog cache and miss output limits precede callbacks
+PASS catalog sink failure and reentrancy leave reusable owners
+PASS catalog lease cannot cross catalogs or become empty during callbacks
+PASS catalog malformed publication and run inputs rejected
+PASS catalog allocation failures preserve publication state and prior caches
+PASS catalog optional cache allocation failure preserves successful output
+PASS catalog disabled retention and zero-length ranges
+PASS catalog plan text budget and selected empty-row output limit
+CATALOG_TEST_COUNTS {"groups":26,"successful_runs":104,"expected_rejections":39,"compared_rows":501,"compared_bytes":3947538,"allocation_failures":12}
+All catalog lifecycle and cache tests passed.

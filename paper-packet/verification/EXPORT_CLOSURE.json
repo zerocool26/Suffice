@@ -1,0 +1,94 @@
+{
+  "all_372_member_hashes_verified": true,
+  "archive_bytes": 3837891,
+  "archive_members": 372,
+  "archive_sha256": "c6ba35462a6e1e997808aa68efda16e75ec5ec8a6e0812e59cc2a3df0ef57eac",
+  "audit_report_matches_receipt": true,
+  "auditor_execution_guard": {
+    "network_events": 0,
+    "outside_file_events": 0,
+    "process_events": 0,
+    "read_events": 943
+  },
+  "builder": {
+    "path": "tools/build_verification.py",
+    "sha256": "f0c90361f0d3e66656fbd84c4a99c7d0221fcc6bd38ffffd535961fbf042231f"
+  },
+  "code_cells_executed": 5,
+  "counts": {
+    "complete_output_checks": 4840,
+    "processes": 100,
+    "result_admissions": 1240,
+    "result_evictions": 240,
+    "result_hits": 1680,
+    "verified_bytes": 419571140,
+    "verified_rows": 23480,
+    "wire_bytes_received": 639715576,
+    "wire_bytes_sent": 1035660
+  },
+  "embedded_verifier_matches_cli_runner": true,
+  "embedded_zip_matches_separate_zip": true,
+  "executed_notebook_matches_receipt": true,
+  "expanded_bytes": 27339265,
+  "external_action_audit": {
+    "external_process_events": 0,
+    "network_events": 0
+  },
+  "filename_update": {
+    "code_cells_reexecuted": false,
+    "new": "Suffice_Offline_Verification.ipynb",
+    "old": "Suffice_0_13_Offline_Verification.ipynb",
+    "unchanged_notebook_sha256": "2327d724edd4af06c5790600131e47ea379a69acc3a5c40539f57cf5635f4b6c"
+  },
+  "files": {
+    "LICENSE": {
+      "bytes": 1077,
+      "sha256": "35f05a15dfeb0cb0db4245724dbb9811a7b59b4780bdeb0e02200eb398a47ca2"
+    },
+    "OFFLINE_AUDIT_RESULT.json": {
+      "bytes": 264856,
+      "sha256": "ecb742a73ff6a6123567c12ede9d033aa110feb5a834501a5ed6d80690588656"
+    },
+    "README.md": {
+      "bytes": 6904,
+      "sha256": "ce81103aa4b117a3426323ac3d00214ce4ab77e347d86b1434736a762dae400d"
+    },
+    "Suffice_0_13_Offline_Evidence.zip": {
+      "bytes": 3837891,
+      "sha256": "c6ba35462a6e1e997808aa68efda16e75ec5ec8a6e0812e59cc2a3df0ef57eac"
+    },
+    "Suffice_0_13_Offline_Evidence_Manifest.json": {
+      "bytes": 79421,
+      "sha256": "d1be1bfa17f902c02eabcd9831525c8db152eb095838b153bd7aaa46dc2dfb8b"
+    },
+    "Suffice_0_13_Paired_Observations.png": {
+      "bytes": 113530,
+      "sha256": "a3493816d592a46428e585045f7b4ba8d1cbef631eae578a921f759bc0060446"
+    },
+    "Suffice_0_13_Paired_Observations.svg": {
+      "bytes": 6812,
+      "sha256": "5849c16f3090490bcb2b6f9ca2dbb772f0c9bbfc6548f2314f029dd082bd9471"
+    },
+    "Suffice_Offline_Verification.ipynb": {
+      "bytes": 5580029,
+      "sha256": "2327d724edd4af06c5790600131e47ea379a69acc3a5c40539f57cf5635f4b6c"
+    },
+    "VERIFICATION_RECEIPT.json": {
+      "bytes": 4277,
+      "sha256": "338ea97953aa184cac2173c6bac7e60107a5d078cce734983f9d7becabe25030"
+    },
+    "run_offline_audit.py": {
+      "bytes": 17238,
+      "sha256": "7bbcabd76368006b1cfd39c5ee942b2ab7242af2151a554816ad3141735df54d"
+    },
+    "validate_notebook.py": {
+      "bytes": 6054,
+      "sha256": "5f7eb4e88192c848e2f7e1e6d0b2cfb955e69b67b29efe1ef99bcb2876c0b41e"
+    }
+  },
+  "schema_version": 1,
+  "scope": "Export closure and retained-notebook evidence; no new native/model experiment.",
+  "status": "passed",
+  "verified_utc": "2026-11-12T06:18:22.136828+00:00",
+  "zip_crc_verified": true
+}

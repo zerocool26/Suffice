@@ -1,0 +1,6 @@
+# Both channel zero and channel one must be nonnegative.
+# Compiles to two sign-plane masks and one AND operation.
+input x 0 0
+input y 1 0
+min both x y
+output both > -1

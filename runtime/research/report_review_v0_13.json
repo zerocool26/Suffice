@@ -1,0 +1,288 @@
+{
+  "blockers": [],
+  "checks": [
+    {
+      "check": "reviewed_bytes_stable_REPORT.md",
+      "detail": "Unchanged from the text or figure inspected in this review.",
+      "evidence": [
+        "REPORT.md"
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "reviewed_bytes_stable_RESEARCH_DOSSIER.md",
+      "detail": "Unchanged from the text or figure inspected in this review.",
+      "evidence": [
+        "RESEARCH_DOSSIER.md"
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "reviewed_bytes_stable_figures/transport_v0_13.png",
+      "detail": "Unchanged from the text or figure inspected in this review.",
+      "evidence": [
+        "figures/transport_v0_13.png"
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "reported_statistics_reuse",
+      "detail": "Service GM, equivalent reduction, raw GM, query GM, both response-byte medians and mean paired byte reduction match at reported precision.",
+      "evidence": [
+        "REPORT.md",
+        "results/transport_v0_13/SUMMARY.json"
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "reported_statistics_pressure",
+      "detail": "Service GM, equivalent reduction, raw GM, query GM, both response-byte medians and mean paired byte reduction match at reported precision.",
+      "evidence": [
+        "REPORT.md",
+        "results/transport_v0_13/SUMMARY.json"
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "reported_statistics_mixed_queries",
+      "detail": "Service GM, equivalent reduction, raw GM, query GM, both response-byte medians and mean paired byte reduction match at reported precision.",
+      "evidence": [
+        "REPORT.md",
+        "results/transport_v0_13/SUMMARY.json"
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "reported_statistics_computed",
+      "detail": "Service GM, equivalent reduction, raw GM, query GM, both response-byte medians and mean paired byte reduction match at reported precision.",
+      "evidence": [
+        "REPORT.md",
+        "results/transport_v0_13/SUMMARY.json"
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "reported_statistics_empty",
+      "detail": "Service GM, equivalent reduction, raw GM, query GM, both response-byte medians and mean paired byte reduction match at reported precision.",
+      "evidence": [
+        "REPORT.md",
+        "results/transport_v0_13/SUMMARY.json"
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "experiment_totals",
+      "detail": "Repeated-output totals match; report explicitly distinguishes unique corpus size.",
+      "evidence": [
+        "results/transport_v0_13/SUMMARY.json"
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "empty_control_qualification",
+      "detail": "GM 1.070 is distinguished from median 0.991 and four wins; outlier and no consistent advantage are explicit.",
+      "evidence": [
+        "REPORT.md",
+        "figures/transport_v0_13.png",
+        "results/transport_v0_13/SUMMARY.json"
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "metric_scope_qualification",
+      "detail": "Whole-session adjusted service, raw wall, and narrower query sums remain distinct; empty aggregate is qualified.",
+      "evidence": [
+        "REPORT.md"
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "native_build_totals_release",
+      "detail": "Nine executables, ten executed checks and 74 stable project inputs per configuration.",
+      "evidence": [
+        "build/transport_release/build_manifest.json"
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "core_cache_disclosure_release",
+      "detail": "The 36-input core archive is reused; zero current support compilation is explicitly disclosed.",
+      "evidence": [
+        "build/transport_release/build_manifest.json"
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "wire_fixture_counts_release",
+      "detail": "Checks are 125, separate from 129 expected rejections and 36 poison cases.",
+      "evidence": [
+        "build/transport_release/logs/wire_correctness.test.log"
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "native_build_totals_sanitize",
+      "detail": "Nine executables, ten executed checks and 74 stable project inputs per configuration.",
+      "evidence": [
+        "build/transport_sanitize/build_manifest.json"
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "core_cache_disclosure_sanitize",
+      "detail": "The 36-input core archive is reused; zero current support compilation is explicitly disclosed.",
+      "evidence": [
+        "build/transport_sanitize/build_manifest.json"
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "wire_fixture_counts_sanitize",
+      "detail": "Checks are 125, separate from 129 expected rejections and 36 poison cases.",
+      "evidence": [
+        "build/transport_sanitize/logs/wire_correctness.test.log"
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "client_gate_counts",
+      "detail": "Final 26-test receipt, not an earlier pre-range-check receipt.",
+      "evidence": [
+        "results/client_framing/RESULT.json"
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "integration_counts_release_jsonl",
+      "detail": "Seven groups, 34 full-output calls, 14 corruptions and nine client-failure checks per combination.",
+      "evidence": [
+        "results/integration_release_jsonl/RESULT.json"
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "integration_counts_release_binary",
+      "detail": "Seven groups, 34 full-output calls, 14 corruptions and nine client-failure checks per combination.",
+      "evidence": [
+        "results/integration_release_binary/RESULT.json"
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "binary_content_counts_release",
+      "detail": "Each configuration covers both transports and both population strategies; 28 output checks and 26,215,296 body bytes per configuration.",
+      "evidence": [
+        "results/transport_integration_release/RESULT.json"
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "integration_counts_sanitize_jsonl",
+      "detail": "Seven groups, 34 full-output calls, 14 corruptions and nine client-failure checks per combination.",
+      "evidence": [
+        "results/integration_sanitize_jsonl/RESULT.json"
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "integration_counts_sanitize_binary",
+      "detail": "Seven groups, 34 full-output calls, 14 corruptions and nine client-failure checks per combination.",
+      "evidence": [
+        "results/integration_sanitize_binary/RESULT.json"
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "binary_content_counts_sanitize",
+      "detail": "Each configuration covers both transports and both population strategies; 28 output checks and 26,215,296 body bytes per configuration.",
+      "evidence": [
+        "results/transport_integration_sanitize/RESULT.json"
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "producer_count",
+      "detail": "Twenty-two tests; overlap with other gates is not treated as independent trials.",
+      "evidence": [
+        "results/producer/RESULT.json"
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "worker_count_jsonl",
+      "detail": "Two population strategies and six complete-output checks per transport.",
+      "evidence": [
+        "results/worker_jsonl/RESULT.json"
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "worker_count_binary",
+      "detail": "Two population strategies and six complete-output checks per transport.",
+      "evidence": [
+        "results/worker_binary/RESULT.json"
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "baseline_archive_identity",
+      "detail": "The disclosed preserved baseline hash and byte count match.",
+      "evidence": [
+        "baseline/Suffice_0_12_0.zip"
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "dossier_claim_boundaries",
+      "detail": "Refinement equality is an obligation, future mechanisms remain proposals, and Windows, liveness, total memory and model-agent evidence gaps are explicit.",
+      "evidence": [
+        "RESEARCH_DOSSIER.md"
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "windows_runner_supplied",
+      "detail": "Presence verified; no Windows execution claim is made.",
+      "evidence": [
+        "scripts/run_windows_v0_13.ps1"
+      ],
+      "status": "passed"
+    }
+  ],
+  "conclusion": "No factual or numerical correction required for the reviewed hashes. Package-specific statements require the separately planned packaging verification before final release.",
+  "evidence_sha256": {
+    "build/transport_release/build_manifest.json": "aeb514b964e7a4a0c767ac107c02bf3b60c14689fae3f983571e910cd8f57cbf",
+    "build/transport_sanitize/build_manifest.json": "5fd333e5eb1335c63a845e37037458ed2978b2df183dec9e9f1ab09523af4330",
+    "research/release_validation_review_v0_13.json": "c921c281d4a255b05ca7bc45d14d08b4da981857eeacdddc78ab1963b5ff41b9",
+    "research/results_review_v0_13.json": "162b3f0f3c851d66416a2f32d8da31ff8c8e122b9058685e42f7dea3fb3215fe",
+    "results/client_framing/RESULT.json": "593412598cb902039295f5990197a19bd84cd92d30b2a4af1e912b0f60e9b9ae",
+    "results/transport_v0_13/RUN.json": "dc9538f23416d248dbb49bc2f6462f86ab335ddca2bc8f56ee7337d4a1cd61a5",
+    "results/transport_v0_13/SUMMARY.json": "b8923214bf1209b681e870fb305294ef00a90d044c829ab4594cc8c087469a04",
+    "results/transport_v0_13/suite.json": "ce20f82b89b3f6b94122f7672be73e1c933d452a630ee871c68afb9470b9d57c"
+  },
+  "excluded_pending_separate_gate": [
+    "Final release inventory and archive CRC/identity/closure checks",
+    "Relocated packaged portable audit and final release receipt",
+    "VALIDATION_SUMMARY.json aggregation produced during packaging; constituent receipts checked directly here"
+  ],
+  "manual_review": {
+    "dossier_all_sections_read": true,
+    "figure_labels_and_outlier_retention_match": true,
+    "figure_visually_inspected": true,
+    "logical_component_limits_not_presented_as_total_RSS": true,
+    "query_time_not_presented_as_complete_service": true,
+    "report_all_sections_read": true,
+    "test_categories_are_not_added_into_independent_trials": true,
+    "windows_and_agent_evidence_not_claimed": true
+  },
+  "required_corrections": [],
+  "reviewed_sha256": {
+    "REPORT.md": "ae4537b26f59d421606ad3914377217be75eb4c03c03b8c7b7940efa420d254f",
+    "RESEARCH_DOSSIER.md": "8e042f60457f6247039869ec15b5b48c569c577a45c42854aa7db9bd96952d85",
+    "figures/transport_v0_13.png": "d2e2d5ee459a169c15c1cd737bca5191f221b62590d3c4076a8c7a423e7e5502"
+  },
+  "reviewed_utc": "2026-11-12T05:52:29.956761+00:00",
+  "schema_version": 1,
+  "scope": "Independent factual, numerical and claims review of REPORT.md, RESEARCH_DOSSIER.md and the plotted figure against retained evidence. Read-only except this receipt; no native execution, builds or timing runs.",
+  "status": "passed"
+}

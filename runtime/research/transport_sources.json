@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "topic": "Bounded binary responses for exact artifact delivery",
+  "research_date_chicago": "2026-11-11",
+  "retrieved_utc": "2026-11-12T05:26:30Z",
+  "status": "Research and proposed validation complete; implementation status belongs to release receipts",
+  "source_policy": "Primary platform documentation and format specification only",
+  "sources": [
+    {
+      "id": "T01",
+      "title": "Python 3.12 io documentation",
+      "publisher": "Python Software Foundation",
+      "url": "https://docs.python.org/3.12/library/io.html",
+      "retrieved_reference": "turn84view0",
+      "source_type": "official documentation or specification",
+      "supported_facts": [
+        "Binary I/O does not translate text/newlines",
+        "Raw read/write may return a short count; framing must handle exact extents"
+      ],
+      "application_boundary": "Platform/format constraints; no external performance result transferred to Suffice"
+    },
+    {
+      "id": "T02",
+      "title": "Python 3.12 struct documentation",
+      "publisher": "Python Software Foundation",
+      "url": "https://docs.python.org/3.12/library/struct.html",
+      "retrieved_reference": "turn84view1",
+      "source_type": "official documentation or specification",
+      "supported_facts": [
+        "Default native layout has platform/compiler dependencies",
+        "Explicit endian prefixes use standard widths without implicit native alignment"
+      ],
+      "application_boundary": "Platform/format constraints; no external performance result transferred to Suffice"
+    },
+    {
+      "id": "T03",
+      "title": "Python 3.12 subprocess documentation",
+      "publisher": "Python Software Foundation",
+      "url": "https://docs.python.org/3.12/library/subprocess.html",
+      "retrieved_reference": "turn84view2",
+      "source_type": "official documentation or specification",
+      "supported_facts": [
+        "Popen pipes are binary by default without text/encoding",
+        "Pipe backpressure can deadlock unmanaged waits",
+        "communicate buffers captured data and is unsuitable for unlimited output"
+      ],
+      "application_boundary": "Platform/format constraints; no external performance result transferred to Suffice"
+    },
+    {
+      "id": "T04",
+      "title": "_setmode",
+      "publisher": "Microsoft",
+      "url": "https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/setmode?view=msvc-170",
+      "retrieved_reference": "turn84view3",
+      "source_type": "official documentation or specification",
+      "supported_facts": [
+        "_O_BINARY disables CRT text translation",
+        "Set translation mode before stream I/O and check failure"
+      ],
+      "application_boundary": "Platform/format constraints; no external performance result transferred to Suffice"
+    },
+    {
+      "id": "T05",
+      "title": "Translation mode constants",
+      "publisher": "Microsoft",
+      "url": "https://learn.microsoft.com/en-us/cpp/c-runtime-library/translation-mode-constants?view=msvc-170",
+      "retrieved_reference": "turn86view0",
+      "source_type": "official documentation or specification",
+      "supported_facts": [
+        "Text mode translates CR/LF and interprets Ctrl-Z as input EOF",
+        "Binary mode suppresses these translations"
+      ],
+      "application_boundary": "Platform/format constraints; no external performance result transferred to Suffice"
+    },
+    {
+      "id": "T06",
+      "title": "Arrow Columnar Format: Serialization and Interprocess Communication",
+      "publisher": "Apache Arrow",
+      "url": "https://arrow.apache.org/docs/format/Columnar.html",
+      "retrieved_reference": "turn86view1",
+      "source_type": "official documentation or specification",
+      "supported_facts": [
+        "Explicit length/version metadata precedes message body",
+        "IPC specification defines byte order and broader array/schema/alignment semantics"
+      ],
+      "application_boundary": "Platform/format constraints; no external performance result transferred to Suffice"
+    }
+  ],
+  "baseline_files": [
+    {
+      "path": "suffice_v0_12/docs/catalog_protocol_v0_11.md",
+      "bytes": 5828,
+      "sha256": "a1a3a55fdccd87789322a3253e245361a7af0f530f3a10e208e555b885ff3de9"
+    },
+    {
+      "path": "suffice_v0_12/scripts/catalog_client.py",
+      "bytes": 9250,
+      "sha256": "cf82338fbea753503df6f4842c10cc0240ce548cd5e48f52561cb1654031e162"
+    },
+    {
+      "path": "suffice_v0_12/apps/catalog/main.cpp",
+      "bytes": 18822,
+      "sha256": "472cd7d01cbd6ee4190c39b0297ee17be9fac150d88e1c9ffaf66459d244c3a0"
+    }
+  ],
+  "third_party_downloads": false,
+  "native_runtime_modified": false,
+  "native_experiments_performed": false,
+  "claims_not_made": [
+    "No established transport latency gain",
+    "No zero-copy consumer contract",
+    "No network authentication or concurrent request multiplexing",
+    "No tested native Windows behavior",
+    "No wall-time bound from frame-size bounds"
+  ]
+}

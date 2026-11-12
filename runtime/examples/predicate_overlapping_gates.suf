@@ -1,0 +1,11 @@
+# Union of two overlapping rectangles in two integer feature channels.
+# Repeated channel thresholds expose shared input planes and subcircuits.
+input a 0 0
+input b 1 0
+const shift 100000000
+add raised_a a shift
+sub lowered_b b shift
+min primary a b
+min shifted raised_a lowered_b
+max accepted primary shifted
+output accepted > 0

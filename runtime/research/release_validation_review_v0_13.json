@@ -1,0 +1,1382 @@
+{
+  "baseline": {
+    "bytes": 6957408,
+    "matches_original_release_receipt": true,
+    "original_release_receipt_sha256": "7121a7c7e3d635e549761110ff193b04aeae1523041248b8e503d6f7c4340ea9",
+    "path": "baseline/Suffice_0_12_0.zip",
+    "sha256": "da69f1f305452e1cffd89ddd50aea1009ba43ab1f7eee3e52624c2b60a170ec8",
+    "support_provenance": {
+      "release": {
+        "archived_cache_hit": false,
+        "archived_manifest": "Suffice_0_12_0/build/retention_release/build_manifest.json",
+        "includes_index": true,
+        "original_core_compile_archive_command_count": 16,
+        "preserved_support_log_members": 17,
+        "sha256": "05df28f992884904a143f22a977a06bb5ad3e9b869ca7454c4bd9d59448c76e1"
+      },
+      "sanitize": {
+        "archived_cache_hit": false,
+        "archived_manifest": "Suffice_0_12_0/build/retention_sanitize/build_manifest.json",
+        "includes_index": true,
+        "original_core_compile_archive_command_count": 16,
+        "preserved_support_log_members": 17,
+        "sha256": "5f925af58e283f68902723f3e9796e7be902ec671d7868ec66e9c55c3f796d2f"
+      }
+    }
+  },
+  "builds": {
+    "release": {
+      "binary_count": 9,
+      "command_count": 51,
+      "compiler_sha256": "6b3696e4dcb85e1c949c732a02befa50e3983ecf94ce7e8e58d9d503b954b79d",
+      "compiler_version": "x86_64-linux-gnu-g++-14 (Debian 14.2.0-19) 14.2.0",
+      "flags": [
+        "-std=c++20",
+        "-O3",
+        "-DNDEBUG",
+        "-pthread",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic"
+      ],
+      "implicit_dependency_hashes": "not_collected; compiler default headers/libraries are environment dependencies",
+      "leak_detection": "not_instrumented",
+      "manifest": "build/transport_release/build_manifest.json",
+      "manifest_sha256": "aeb514b964e7a4a0c767ac107c02bf3b60c14689fae3f983571e910cd8f57cbf",
+      "object_count": 32,
+      "project_input_count": 74,
+      "status": "passed",
+      "support_cache_hit": true,
+      "support_cache_key": "efcabcf06f19df5942aaea4a8c2ba2a840315669e2dfd73acacd1f549fb2078e",
+      "support_historical_commands": 16,
+      "support_input_count": 36,
+      "support_library_sha256": "68e48e33adfe9ef695da4664247b5ee00ee840455ee13d7f3c766233b6260744",
+      "support_this_invocation_build_ms": 0.0,
+      "test_environment_overrides": {},
+      "test_gate_count": 10,
+      "test_gates": {
+        "catalog_cli_help": "passed",
+        "catalog_cli_version": "passed",
+        "catalog_correctness": "passed",
+        "core_cli_version": "passed",
+        "core_correctness": "passed",
+        "digest_correctness": "passed",
+        "payload_cli_help": "passed",
+        "payload_cli_version": "passed",
+        "payload_correctness": "passed",
+        "wire_correctness": "passed"
+      }
+    },
+    "sanitize": {
+      "binary_count": 9,
+      "command_count": 51,
+      "compiler_sha256": "6b3696e4dcb85e1c949c732a02befa50e3983ecf94ce7e8e58d9d503b954b79d",
+      "compiler_version": "x86_64-linux-gnu-g++-14 (Debian 14.2.0-19) 14.2.0",
+      "flags": [
+        "-std=c++20",
+        "-O1",
+        "-g",
+        "-pthread",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer"
+      ],
+      "implicit_dependency_hashes": "not_collected; compiler default headers/libraries are environment dependencies",
+      "leak_detection": "disabled",
+      "manifest": "build/transport_sanitize/build_manifest.json",
+      "manifest_sha256": "5fd333e5eb1335c63a845e37037458ed2978b2df183dec9e9f1ab09523af4330",
+      "object_count": 32,
+      "project_input_count": 74,
+      "status": "passed",
+      "support_cache_hit": true,
+      "support_cache_key": "edeeb3f86581e92baa3ffe611f371ae704a8beac0b6c744b2acb6ef59d7aa7e9",
+      "support_historical_commands": 16,
+      "support_input_count": 36,
+      "support_library_sha256": "3925b205213b4ef6b58a532d58a4020f467d394d83ab4c38340719c63752f38e",
+      "support_this_invocation_build_ms": 0.0,
+      "test_environment_overrides": {
+        "ASAN_OPTIONS": "detect_leaks=0:halt_on_error=1",
+        "UBSAN_OPTIONS": "halt_on_error=1:print_stacktrace=1"
+      },
+      "test_gate_count": 10,
+      "test_gates": {
+        "catalog_cli_help": "passed",
+        "catalog_cli_version": "passed",
+        "catalog_correctness": "passed",
+        "core_cli_version": "passed",
+        "core_correctness": "passed",
+        "digest_correctness": "passed",
+        "payload_cli_help": "passed",
+        "payload_cli_version": "passed",
+        "payload_correctness": "passed",
+        "wire_correctness": "passed"
+      }
+    }
+  },
+  "experiment": {
+    "corpus_files": 103,
+    "frozen_source_files": 78,
+    "raw_output_bodies_reexecuted": false,
+    "repeats": 10,
+    "retained_inputs": 187,
+    "scenario_count": 5,
+    "status": "passed",
+    "summary_sha256": "b8923214bf1209b681e870fb305294ef00a90d044c829ab4594cc8c087469a04",
+    "totals_reconciled": {
+      "complete_output_checks": 4840,
+      "processes": 100,
+      "verified_bytes": 419571140,
+      "verified_rows": 23480,
+      "wire_bytes_received": 639715576,
+      "wire_bytes_sent": 1035660
+    }
+  },
+  "final_package_reviewed": false,
+  "integrity_check_count": 207,
+  "integrity_checks": [
+    {
+      "check": "release_source_snapshots_equal",
+      "passed": true
+    },
+    {
+      "check": "release_passed_stable",
+      "passed": true
+    },
+    {
+      "check": "release_74_current_project_inputs",
+      "passed": true
+    },
+    {
+      "check": "release_32_objects",
+      "passed": true
+    },
+    {
+      "check": "release_9_binaries",
+      "passed": true
+    },
+    {
+      "check": "release_51_commands_and_logs",
+      "passed": true
+    },
+    {
+      "check": "release_10_test_logs",
+      "passed": true
+    },
+    {
+      "check": "release_test_assertions_enabled",
+      "passed": true
+    },
+    {
+      "check": "release_core_identity_cache_key",
+      "passed": true
+    },
+    {
+      "check": "release_36_core_inputs",
+      "passed": true
+    },
+    {
+      "check": "release_core_archive_identity",
+      "passed": true
+    },
+    {
+      "check": "release_compiler_identity_stability",
+      "passed": true
+    },
+    {
+      "check": "sanitize_source_snapshots_equal",
+      "passed": true
+    },
+    {
+      "check": "sanitize_passed_stable",
+      "passed": true
+    },
+    {
+      "check": "sanitize_74_current_project_inputs",
+      "passed": true
+    },
+    {
+      "check": "sanitize_32_objects",
+      "passed": true
+    },
+    {
+      "check": "sanitize_9_binaries",
+      "passed": true
+    },
+    {
+      "check": "sanitize_51_commands_and_logs",
+      "passed": true
+    },
+    {
+      "check": "sanitize_10_test_logs",
+      "passed": true
+    },
+    {
+      "check": "sanitize_test_assertions_enabled",
+      "passed": true
+    },
+    {
+      "check": "sanitize_core_identity_cache_key",
+      "passed": true
+    },
+    {
+      "check": "sanitize_36_core_inputs",
+      "passed": true
+    },
+    {
+      "check": "sanitize_core_archive_identity",
+      "passed": true
+    },
+    {
+      "check": "sanitize_compiler_identity_stability",
+      "passed": true
+    },
+    {
+      "check": "client_framing_passed",
+      "passed": true
+    },
+    {
+      "check": "client_framing_client_sha256",
+      "passed": true
+    },
+    {
+      "check": "client_framing_test_sha256",
+      "passed": true
+    },
+    {
+      "check": "integration_release_binary_passed",
+      "passed": true
+    },
+    {
+      "check": "integration_release_binary_input_snapshots_equal",
+      "passed": true
+    },
+    {
+      "check": "integration_release_binary_identity_suffice",
+      "passed": true
+    },
+    {
+      "check": "integration_release_binary_identity_suffice_catalog",
+      "passed": true
+    },
+    {
+      "check": "integration_release_binary_identity_artifact_catalog.py",
+      "passed": true
+    },
+    {
+      "check": "integration_release_binary_identity_catalog_client.py",
+      "passed": true
+    },
+    {
+      "check": "integration_release_binary_identity_payload_store.py",
+      "passed": true
+    },
+    {
+      "check": "integration_release_binary_identity_test_catalog_integration.py",
+      "passed": true
+    },
+    {
+      "check": "integration_release_jsonl_passed",
+      "passed": true
+    },
+    {
+      "check": "integration_release_jsonl_input_snapshots_equal",
+      "passed": true
+    },
+    {
+      "check": "integration_release_jsonl_identity_suffice",
+      "passed": true
+    },
+    {
+      "check": "integration_release_jsonl_identity_suffice_catalog",
+      "passed": true
+    },
+    {
+      "check": "integration_release_jsonl_identity_artifact_catalog.py",
+      "passed": true
+    },
+    {
+      "check": "integration_release_jsonl_identity_catalog_client.py",
+      "passed": true
+    },
+    {
+      "check": "integration_release_jsonl_identity_payload_store.py",
+      "passed": true
+    },
+    {
+      "check": "integration_release_jsonl_identity_test_catalog_integration.py",
+      "passed": true
+    },
+    {
+      "check": "integration_sanitize_binary_passed",
+      "passed": true
+    },
+    {
+      "check": "integration_sanitize_binary_input_snapshots_equal",
+      "passed": true
+    },
+    {
+      "check": "integration_sanitize_binary_identity_suffice",
+      "passed": true
+    },
+    {
+      "check": "integration_sanitize_binary_identity_suffice_catalog",
+      "passed": true
+    },
+    {
+      "check": "integration_sanitize_binary_identity_artifact_catalog.py",
+      "passed": true
+    },
+    {
+      "check": "integration_sanitize_binary_identity_catalog_client.py",
+      "passed": true
+    },
+    {
+      "check": "integration_sanitize_binary_identity_payload_store.py",
+      "passed": true
+    },
+    {
+      "check": "integration_sanitize_binary_identity_test_catalog_integration.py",
+      "passed": true
+    },
+    {
+      "check": "integration_sanitize_jsonl_passed",
+      "passed": true
+    },
+    {
+      "check": "integration_sanitize_jsonl_input_snapshots_equal",
+      "passed": true
+    },
+    {
+      "check": "integration_sanitize_jsonl_identity_suffice",
+      "passed": true
+    },
+    {
+      "check": "integration_sanitize_jsonl_identity_suffice_catalog",
+      "passed": true
+    },
+    {
+      "check": "integration_sanitize_jsonl_identity_artifact_catalog.py",
+      "passed": true
+    },
+    {
+      "check": "integration_sanitize_jsonl_identity_catalog_client.py",
+      "passed": true
+    },
+    {
+      "check": "integration_sanitize_jsonl_identity_payload_store.py",
+      "passed": true
+    },
+    {
+      "check": "integration_sanitize_jsonl_identity_test_catalog_integration.py",
+      "passed": true
+    },
+    {
+      "check": "producer_passed",
+      "passed": true
+    },
+    {
+      "check": "producer_producer_sha256",
+      "passed": true
+    },
+    {
+      "check": "producer_packer_sha256",
+      "passed": true
+    },
+    {
+      "check": "producer_test_sha256",
+      "passed": true
+    },
+    {
+      "check": "transport_integration_release_passed",
+      "passed": true
+    },
+    {
+      "check": "transport_integration_release_input_snapshots_equal",
+      "passed": true
+    },
+    {
+      "check": "transport_integration_release_identity_suffice_catalog",
+      "passed": true
+    },
+    {
+      "check": "transport_integration_release_identity_suffice",
+      "passed": true
+    },
+    {
+      "check": "transport_integration_release_identity_test_transport_integration.py",
+      "passed": true
+    },
+    {
+      "check": "transport_integration_release_identity_catalog_client.py",
+      "passed": true
+    },
+    {
+      "check": "transport_integration_release_identity_artifact_catalog.py",
+      "passed": true
+    },
+    {
+      "check": "transport_integration_release_identity_payload_store.py",
+      "passed": true
+    },
+    {
+      "check": "transport_integration_sanitize_passed",
+      "passed": true
+    },
+    {
+      "check": "transport_integration_sanitize_input_snapshots_equal",
+      "passed": true
+    },
+    {
+      "check": "transport_integration_sanitize_identity_suffice_catalog",
+      "passed": true
+    },
+    {
+      "check": "transport_integration_sanitize_identity_suffice",
+      "passed": true
+    },
+    {
+      "check": "transport_integration_sanitize_identity_test_transport_integration.py",
+      "passed": true
+    },
+    {
+      "check": "transport_integration_sanitize_identity_catalog_client.py",
+      "passed": true
+    },
+    {
+      "check": "transport_integration_sanitize_identity_artifact_catalog.py",
+      "passed": true
+    },
+    {
+      "check": "transport_integration_sanitize_identity_payload_store.py",
+      "passed": true
+    },
+    {
+      "check": "worker_binary_passed",
+      "passed": true
+    },
+    {
+      "check": "worker_binary_client_sha256",
+      "passed": true
+    },
+    {
+      "check": "worker_binary_binary_sha256",
+      "passed": true
+    },
+    {
+      "check": "worker_binary_test_sha256",
+      "passed": true
+    },
+    {
+      "check": "worker_jsonl_passed",
+      "passed": true
+    },
+    {
+      "check": "worker_jsonl_client_sha256",
+      "passed": true
+    },
+    {
+      "check": "worker_jsonl_binary_sha256",
+      "passed": true
+    },
+    {
+      "check": "worker_jsonl_test_sha256",
+      "passed": true
+    },
+    {
+      "check": "preserved_v0_12_archive_hash",
+      "passed": true
+    },
+    {
+      "check": "preserved_v0_12_archive_size",
+      "passed": true
+    },
+    {
+      "check": "release_core_ancestry",
+      "passed": true
+    },
+    {
+      "check": "sanitize_core_ancestry",
+      "passed": true
+    },
+    {
+      "check": "baseline_copy_README.md",
+      "passed": true
+    },
+    {
+      "check": "baseline_copy_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "baseline_copy_PROJECT_HANDOFF.md",
+      "passed": true
+    },
+    {
+      "check": "baseline_copy_VALIDATION_SUMMARY.json",
+      "passed": true
+    },
+    {
+      "check": "baseline_copy_RELEASE_INVENTORY.json",
+      "passed": true
+    },
+    {
+      "check": "baseline_copy_RESEARCH_DOSSIER.md",
+      "passed": true
+    },
+    {
+      "check": "experiment_suite_identity",
+      "passed": true
+    },
+    {
+      "check": "experiment_run_identity",
+      "passed": true
+    },
+    {
+      "check": "experiment_code_stability",
+      "passed": true
+    },
+    {
+      "check": "experiment_build_identity",
+      "passed": true
+    },
+    {
+      "check": "source_evidence_suite_identity",
+      "passed": true
+    },
+    {
+      "check": "source_evidence_run_identity",
+      "passed": true
+    },
+    {
+      "check": "187_retained_inputs",
+      "passed": true
+    },
+    {
+      "check": "input_snapshots_stable",
+      "passed": true
+    },
+    {
+      "check": "78_frozen_source_identities",
+      "passed": true
+    },
+    {
+      "check": "process_processes/000_reuse_r00_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/001_reuse_r00_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/002_pressure_r00_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/003_pressure_r00_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/004_mixed_queries_r00_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/005_mixed_queries_r00_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/006_computed_r00_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/007_computed_r00_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/008_empty_r00_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/009_empty_r00_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/010_pressure_r01_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/011_pressure_r01_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/012_mixed_queries_r01_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/013_mixed_queries_r01_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/014_computed_r01_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/015_computed_r01_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/016_empty_r01_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/017_empty_r01_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/018_reuse_r01_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/019_reuse_r01_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/020_mixed_queries_r02_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/021_mixed_queries_r02_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/022_computed_r02_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/023_computed_r02_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/024_empty_r02_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/025_empty_r02_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/026_reuse_r02_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/027_reuse_r02_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/028_pressure_r02_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/029_pressure_r02_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/030_computed_r03_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/031_computed_r03_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/032_empty_r03_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/033_empty_r03_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/034_reuse_r03_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/035_reuse_r03_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/036_pressure_r03_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/037_pressure_r03_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/038_mixed_queries_r03_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/039_mixed_queries_r03_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/040_empty_r04_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/041_empty_r04_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/042_reuse_r04_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/043_reuse_r04_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/044_pressure_r04_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/045_pressure_r04_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/046_mixed_queries_r04_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/047_mixed_queries_r04_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/048_computed_r04_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/049_computed_r04_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/050_reuse_r05_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/051_reuse_r05_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/052_pressure_r05_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/053_pressure_r05_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/054_mixed_queries_r05_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/055_mixed_queries_r05_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/056_computed_r05_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/057_computed_r05_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/058_empty_r05_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/059_empty_r05_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/060_pressure_r06_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/061_pressure_r06_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/062_mixed_queries_r06_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/063_mixed_queries_r06_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/064_computed_r06_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/065_computed_r06_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/066_empty_r06_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/067_empty_r06_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/068_reuse_r06_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/069_reuse_r06_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/070_mixed_queries_r07_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/071_mixed_queries_r07_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/072_computed_r07_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/073_computed_r07_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/074_empty_r07_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/075_empty_r07_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/076_reuse_r07_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/077_reuse_r07_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/078_pressure_r07_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/079_pressure_r07_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/080_computed_r08_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/081_computed_r08_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/082_empty_r08_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/083_empty_r08_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/084_reuse_r08_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/085_reuse_r08_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/086_pressure_r08_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/087_pressure_r08_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/088_mixed_queries_r08_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/089_mixed_queries_r08_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/090_empty_r09_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/091_empty_r09_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/092_reuse_r09_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/093_reuse_r09_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/094_pressure_r09_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/095_pressure_r09_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/096_mixed_queries_r09_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/097_mixed_queries_r09_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/098_computed_r09_binary.json",
+      "passed": true
+    },
+    {
+      "check": "process_processes/099_computed_r09_jsonl.json",
+      "passed": true
+    },
+    {
+      "check": "experiment_summary_totals",
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "Final 0.13 archive/inventory and relocated package-audit receipt were not available at review cutoff; this is evidence-readiness review.",
+    "Both builds reused content-addressed core archives from the preserved 0.12 build. Application/test objects and all nine links are new.",
+    "Default system headers, linker/archiver, shared libraries and implicit codec dependencies are not hashed or bundled by the build identity.",
+    "Sanitizer leak detection is disabled and the separately installed native codec is not instrumented by this project build.",
+    "All observed execution is Linux; no executed Windows build/CRT receipt.",
+    "Client framing caps do not establish request or graceful-close deadlines. QUIT can block before close enters its process wait timeout.",
+    "Portable audit reconciles retained records and original-source descriptors, not historical native body delivery or timing. It assumes byte-preserved ordinary local files and a trusted auditor."
+  ],
+  "reviewed_files": {
+    "baseline/Suffice_0_12_0.zip": {
+      "bytes": 6957408,
+      "sha256": "da69f1f305452e1cffd89ddd50aea1009ba43ab1f7eee3e52624c2b60a170ec8"
+    },
+    "baseline/v0_12_PROJECT_HANDOFF.md": {
+      "bytes": 3633,
+      "sha256": "0d3b6447ea122f42ef4c856177018670e7564a98396efe76b0022bbe3c9c0b9d"
+    },
+    "baseline/v0_12_README.md": {
+      "bytes": 12778,
+      "sha256": "e22ba7d1db891b3d7c8705dbdced7403ea5090c7c2c974d73a2380c465e99375"
+    },
+    "baseline/v0_12_RELEASE_INVENTORY.json": {
+      "bytes": 132319,
+      "sha256": "45801dee0c6f4dd715c39d976f6911c0be77cd531f517e99b9db2cb41beffacc"
+    },
+    "baseline/v0_12_REPORT.md": {
+      "bytes": 33661,
+      "sha256": "5a87ec89c19f72bbe8a4719904eb2e5ecce721f27f131ab777789cc30df9d73b"
+    },
+    "baseline/v0_12_RESEARCH_DOSSIER.md": {
+      "bytes": 65108,
+      "sha256": "5054d7de3b3ff0a366862d91eddbeb1f6d7e66857c2967c580c6e3412610e9ab"
+    },
+    "baseline/v0_12_VALIDATION_SUMMARY.json": {
+      "bytes": 4198,
+      "sha256": "8f7def52d887ed3632d87cf6a5373905c6d85045ce0c92f515764f05c7275707"
+    },
+    "build/codegen_cache/edeeb3f86581e92baa3ffe611f371ae704a8beac0b6c744b2acb6ef59d7aa7e9/manifest.json": {
+      "bytes": 15648,
+      "sha256": "ac91648cfd82eacd3892b4b985d7b14fdabeab9692acb412c5f864232a94a6c7"
+    },
+    "build/codegen_cache/efcabcf06f19df5942aaea4a8c2ba2a840315669e2dfd73acacd1f549fb2078e/manifest.json": {
+      "bytes": 14605,
+      "sha256": "19360a1cc370fd578de5143925ce72453d81af369ed5e2ec5a57df0407beea0f"
+    },
+    "build/transport_release/build_manifest.json": {
+      "bytes": 106533,
+      "sha256": "aeb514b964e7a4a0c767ac107c02bf3b60c14689fae3f983571e910cd8f57cbf"
+    },
+    "build/transport_release/logs/catalog_correctness.test.log": {
+      "bytes": 1931,
+      "sha256": "18a82d673a9efa63d132efa8639c89e9ee1d628cbfae811636f771a0676ddfec"
+    },
+    "build/transport_release/logs/core_correctness.test.log": {
+      "bytes": 1141,
+      "sha256": "656d2201cfe91b40fc98f1790b559de20ea7ec29502a165d576a33c8cb10a25f"
+    },
+    "build/transport_release/logs/digest_correctness.test.log": {
+      "bytes": 87,
+      "sha256": "82280175b55c2164850ee254c990b1f1824aa127a1a1412280f7c37a31602fb1"
+    },
+    "build/transport_release/logs/payload_correctness.test.log": {
+      "bytes": 1471,
+      "sha256": "432b2f8d7326f7bf1360011a348477e8c98fc1b30e28c98b303c796062585b04"
+    },
+    "build/transport_release/logs/wire_correctness.test.log": {
+      "bytes": 88,
+      "sha256": "846f66e422eead7282e850cc665b444059991bc63d000fe51356f9e8f5bfe480"
+    },
+    "build/transport_sanitize/build_manifest.json": {
+      "bytes": 110871,
+      "sha256": "5fd333e5eb1335c63a845e37037458ed2978b2df183dec9e9f1ab09523af4330"
+    },
+    "build/transport_sanitize/logs/catalog_correctness.test.log": {
+      "bytes": 1931,
+      "sha256": "18a82d673a9efa63d132efa8639c89e9ee1d628cbfae811636f771a0676ddfec"
+    },
+    "build/transport_sanitize/logs/core_correctness.test.log": {
+      "bytes": 1141,
+      "sha256": "656d2201cfe91b40fc98f1790b559de20ea7ec29502a165d576a33c8cb10a25f"
+    },
+    "build/transport_sanitize/logs/digest_correctness.test.log": {
+      "bytes": 87,
+      "sha256": "82280175b55c2164850ee254c990b1f1824aa127a1a1412280f7c37a31602fb1"
+    },
+    "build/transport_sanitize/logs/payload_correctness.test.log": {
+      "bytes": 1471,
+      "sha256": "432b2f8d7326f7bf1360011a348477e8c98fc1b30e28c98b303c796062585b04"
+    },
+    "build/transport_sanitize/logs/wire_correctness.test.log": {
+      "bytes": 88,
+      "sha256": "846f66e422eead7282e850cc665b444059991bc63d000fe51356f9e8f5bfe480"
+    },
+    "docs/binary_protocol_v0_13.md": {
+      "bytes": 11281,
+      "sha256": "f4e1488a5ad5faefa4d1127765274ad3a868be49238106d2e46d8baf6aad863c"
+    },
+    "docs/transport_experiment_v0_13.md": {
+      "bytes": 11096,
+      "sha256": "69f65d65c2f16d6b72091fcf81fcef4688c715a4074105aa29e2e056e3eed754"
+    },
+    "results/client_framing/RESULT.json": {
+      "bytes": 772,
+      "sha256": "593412598cb902039295f5990197a19bd84cd92d30b2a4af1e912b0f60e9b9ae"
+    },
+    "results/integration_release_binary/RESULT.json": {
+      "bytes": 6529,
+      "sha256": "34dad8c146894639faa16be1596ab4998371a8e1cd1d1fe8ac10df649622bd61"
+    },
+    "results/integration_release_jsonl/RESULT.json": {
+      "bytes": 6526,
+      "sha256": "0e3297059854d33d797845ed22510504325879399df97bdb377042a3754567ba"
+    },
+    "results/integration_sanitize_binary/RESULT.json": {
+      "bytes": 6536,
+      "sha256": "c4cbe29639f4d8af4bedb2075acb5ad825d81e391d289b06e7681e060ff81768"
+    },
+    "results/integration_sanitize_jsonl/RESULT.json": {
+      "bytes": 6533,
+      "sha256": "1797ecf3ecb828b48a10c0523d84f0c320376e456e1e483522133b54e2ac5a45"
+    },
+    "results/producer/RESULT.json": {
+      "bytes": 789,
+      "sha256": "86fcc7b872596c2156bb896ba502ca18d45d1949b34f4edc5e37a2dce0d896c3"
+    },
+    "results/transport_integration_release/RESULT.json": {
+      "bytes": 79523,
+      "sha256": "84a9a182f33da1f7a4b9c7381eb11db7037f464a665b196c928c9fb830697b21"
+    },
+    "results/transport_integration_sanitize/RESULT.json": {
+      "bytes": 79568,
+      "sha256": "69226ab07d21a5684f9a0a14ca8acd3367d4d266b6355010e6d758351bddd20b"
+    },
+    "results/transport_v0_13/EVIDENCE_SOURCE_RUN.json": {
+      "bytes": 87496,
+      "sha256": "85f5f15a33286d3e145ca6130f2eb6e72823cb077cc63115b4c9a8031a7c3338"
+    },
+    "results/transport_v0_13/EVIDENCE_SOURCE_SUITE.json": {
+      "bytes": 120127,
+      "sha256": "a44b641954e8d51e7c0a981c6558f3ec983ff74edc5e5d01fa991a37b85df243"
+    },
+    "results/transport_v0_13/MEASURED_BUILD_MANIFEST.json": {
+      "bytes": 106533,
+      "sha256": "aeb514b964e7a4a0c767ac107c02bf3b60c14689fae3f983571e910cd8f57cbf"
+    },
+    "results/transport_v0_13/RUN.json": {
+      "bytes": 170000,
+      "sha256": "dc9538f23416d248dbb49bc2f6462f86ab335ddca2bc8f56ee7337d4a1cd61a5"
+    },
+    "results/transport_v0_13/SUMMARY.json": {
+      "bytes": 270902,
+      "sha256": "b8923214bf1209b681e870fb305294ef00a90d044c829ab4594cc8c087469a04"
+    },
+    "results/transport_v0_13/suite.json": {
+      "bytes": 242589,
+      "sha256": "ce20f82b89b3f6b94122f7672be73e1c933d452a630ee871c68afb9470b9d57c"
+    },
+    "results/worker_binary/RESULT.json": {
+      "bytes": 11848,
+      "sha256": "60a8143e8b9edd5998a161e2aaa1a7ab914a877a5c77adeb5d9baf86e5a23e51"
+    },
+    "results/worker_jsonl/RESULT.json": {
+      "bytes": 11840,
+      "sha256": "fea94f052a3de2e370dc566868d70a719405a2fff17a6a93902b680a4cdc80fc"
+    },
+    "scripts/benchmark_transport_v0_13.py": {
+      "bytes": 53485,
+      "sha256": "edd889bc32902304a79c2e719174841cc505567281272e703b4cd55831f6a3c9"
+    },
+    "scripts/build_payload.py": {
+      "bytes": 16500,
+      "sha256": "5a05fde965ecdb4901f99d5d381a0d0b0dd93e76d8618917ddb7d44b05bf3e70"
+    },
+    "scripts/catalog_client.py": {
+      "bytes": 20673,
+      "sha256": "f0282195bf939aded456aa54258bcf0c237ccd9255660d665875feaaf6680495"
+    },
+    "scripts/codegen_support.py": {
+      "bytes": 6081,
+      "sha256": "8505fbc66bb9a171d609107518adc8d5c9f93f87257bb66523ad407504a7ddf7"
+    },
+    "tests/test_catalog_framing.py": {
+      "bytes": 25406,
+      "sha256": "ce3c84f44353420fc727591526a339d3f17d9594aff07727842dafb5e6d5512c"
+    },
+    "tests/test_transport_integration.py": {
+      "bytes": 10069,
+      "sha256": "2436489bd89d767a2eab67c7aa2dff55745569d25a58bdcb03d19b09ce0ab7cb"
+    }
+  },
+  "reviewed_utc": "2026-11-12T05:49:16.454461+00:00",
+  "reviewer_disclosure": "Separate agent from the release/build/measurement author; reviewer authored the Python transport client and its framing tests, which received a separate transport review.",
+  "schema_version": 1,
+  "scope": "Read-only source, receipt, archive-ancestry, and count reconciliation. No native executable, benchmark, test suite, or retained-record audit was rerun.",
+  "status": "passed_with_scope_limits",
+  "validation_receipts": {
+    "client_framing": {
+      "counters": {
+        "expected_protocol_rejections": 267,
+        "fragmentation_positions": 159,
+        "real_pipe_eof_checks": 2,
+        "truncation_positions": 155,
+        "validated_terminal_responses": 192
+      },
+      "errors": 0,
+      "failures": 0,
+      "identities_checked": 2,
+      "native_windows_tested": false,
+      "path": "results/client_framing/RESULT.json",
+      "sha256": "593412598cb902039295f5990197a19bd84cd92d30b2a4af1e912b0f60e9b9ae",
+      "skipped": 0,
+      "status": "passed",
+      "test_cases": 26
+    },
+    "integration_release_binary": {
+      "counters": {
+        "client_failure_checks": 9,
+        "corruptions_rejected": 14,
+        "full_output_calls": 34,
+        "hash_only_calls": 1,
+        "native_rejections": 35,
+        "plaintext_bytes_compared": 1224,
+        "plaintext_rows_compared": 181,
+        "producer_publications": 4,
+        "producer_reuses": 1,
+        "successful_native_commands": 114
+      },
+      "group_count": 7,
+      "identities_checked": 6,
+      "native_windows_tested": false,
+      "path": "results/integration_release_binary/RESULT.json",
+      "sha256": "34dad8c146894639faa16be1596ab4998371a8e1cd1d1fe8ac10df649622bd61",
+      "status": "passed",
+      "transport": "binary"
+    },
+    "integration_release_jsonl": {
+      "counters": {
+        "client_failure_checks": 9,
+        "corruptions_rejected": 14,
+        "full_output_calls": 34,
+        "hash_only_calls": 1,
+        "native_rejections": 35,
+        "plaintext_bytes_compared": 1224,
+        "plaintext_rows_compared": 181,
+        "producer_publications": 4,
+        "producer_reuses": 1,
+        "successful_native_commands": 114
+      },
+      "group_count": 7,
+      "identities_checked": 6,
+      "native_windows_tested": false,
+      "path": "results/integration_release_jsonl/RESULT.json",
+      "sha256": "0e3297059854d33d797845ed22510504325879399df97bdb377042a3754567ba",
+      "status": "passed",
+      "transport": "jsonl"
+    },
+    "integration_sanitize_binary": {
+      "counters": {
+        "client_failure_checks": 9,
+        "corruptions_rejected": 14,
+        "full_output_calls": 34,
+        "hash_only_calls": 1,
+        "native_rejections": 35,
+        "plaintext_bytes_compared": 1224,
+        "plaintext_rows_compared": 181,
+        "producer_publications": 4,
+        "producer_reuses": 1,
+        "successful_native_commands": 114
+      },
+      "group_count": 7,
+      "identities_checked": 6,
+      "native_windows_tested": false,
+      "path": "results/integration_sanitize_binary/RESULT.json",
+      "sha256": "c4cbe29639f4d8af4bedb2075acb5ad825d81e391d289b06e7681e060ff81768",
+      "status": "passed",
+      "transport": "binary"
+    },
+    "integration_sanitize_jsonl": {
+      "counters": {
+        "client_failure_checks": 9,
+        "corruptions_rejected": 14,
+        "full_output_calls": 34,
+        "hash_only_calls": 1,
+        "native_rejections": 35,
+        "plaintext_bytes_compared": 1224,
+        "plaintext_rows_compared": 181,
+        "producer_publications": 4,
+        "producer_reuses": 1,
+        "successful_native_commands": 114
+      },
+      "group_count": 7,
+      "identities_checked": 6,
+      "native_windows_tested": false,
+      "path": "results/integration_sanitize_jsonl/RESULT.json",
+      "sha256": "1797ecf3ecb828b48a10c0523d84f0c320376e456e1e483522133b54e2ac5a45",
+      "status": "passed",
+      "transport": "jsonl"
+    },
+    "producer": {
+      "counters": {
+        "expected_rejections": 33,
+        "interrupted_commits_preserved": 1,
+        "no_change_reuses": 8,
+        "publications": 22,
+        "row_bytes_compared": 4356,
+        "rows_compared": 82,
+        "uncertain_candidates_retained": 1
+      },
+      "errors": 0,
+      "failures": 0,
+      "identities_checked": 3,
+      "native_windows_tested": false,
+      "path": "results/producer/RESULT.json",
+      "sha256": "86fcc7b872596c2156bb896ba502ca18d45d1949b34f4edc5e37a2dce0d896c3",
+      "skipped": 0,
+      "status": "passed",
+      "test_cases": 22
+    },
+    "transport_integration_release": {
+      "arms": [
+        {
+          "population": "capture",
+          "transport": "jsonl"
+        },
+        {
+          "population": "recompute",
+          "transport": "jsonl"
+        },
+        {
+          "population": "capture",
+          "transport": "binary"
+        },
+        {
+          "population": "recompute",
+          "transport": "binary"
+        }
+      ],
+      "counters": {
+        "complete_output_checks": 28,
+        "hash_checks": 4,
+        "preflight_rejections": 8,
+        "processes": 4,
+        "quit_checks": 4,
+        "streaming_checks": 4,
+        "verified_bytes": 26215296,
+        "verified_rows": 92,
+        "wire_formula_checks": 28
+      },
+      "identities_checked": 6,
+      "native_windows_tested": false,
+      "path": "results/transport_integration_release/RESULT.json",
+      "sha256": "84a9a182f33da1f7a4b9c7381eb11db7037f464a665b196c928c9fb830697b21",
+      "status": "passed"
+    },
+    "transport_integration_sanitize": {
+      "arms": [
+        {
+          "population": "capture",
+          "transport": "jsonl"
+        },
+        {
+          "population": "recompute",
+          "transport": "jsonl"
+        },
+        {
+          "population": "capture",
+          "transport": "binary"
+        },
+        {
+          "population": "recompute",
+          "transport": "binary"
+        }
+      ],
+      "counters": {
+        "complete_output_checks": 28,
+        "hash_checks": 4,
+        "preflight_rejections": 8,
+        "processes": 4,
+        "quit_checks": 4,
+        "streaming_checks": 4,
+        "verified_bytes": 26215296,
+        "verified_rows": 92,
+        "wire_formula_checks": 28
+      },
+      "identities_checked": 6,
+      "native_windows_tested": false,
+      "path": "results/transport_integration_sanitize/RESULT.json",
+      "sha256": "69226ab07d21a5684f9a0a14ca8acd3367d4d266b6355010e6d758351bddd20b",
+      "status": "passed"
+    },
+    "worker_binary": {
+      "bytes_per_check": 153411,
+      "complete_output_checks": 6,
+      "identities_checked": 3,
+      "path": "results/worker_binary/RESULT.json",
+      "rows_per_check": 8,
+      "sha256": "60a8143e8b9edd5998a161e2aaa1a7ab914a877a5c77adeb5d9baf86e5a23e51",
+      "status": "passed",
+      "strategies": 2,
+      "transport": "binary"
+    },
+    "worker_jsonl": {
+      "bytes_per_check": 153411,
+      "complete_output_checks": 6,
+      "identities_checked": 3,
+      "path": "results/worker_jsonl/RESULT.json",
+      "rows_per_check": 8,
+      "sha256": "fea94f052a3de2e370dc566868d70a719405a2fff17a6a93902b680a4cdc80fc",
+      "status": "passed",
+      "strategies": 2,
+      "transport": "jsonl"
+    }
+  }
+}

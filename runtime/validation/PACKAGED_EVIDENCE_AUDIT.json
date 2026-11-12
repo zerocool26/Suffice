@@ -1,0 +1,16 @@
+{
+  "counts": {
+    "complete_output_checks": 4840,
+    "processes": 100,
+    "result_admissions": 1240,
+    "result_evictions": 240,
+    "result_hits": 1680,
+    "verified_bytes": 419571140,
+    "verified_rows": 23480,
+    "wire_bytes_received": 639715576,
+    "wire_bytes_sent": 1035660
+  },
+  "historical_native_execution": false,
+  "mode": "audit",
+  "status": "passed"
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "test_cases": 26,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "counters": {
+    "validated_terminal_responses": 192,
+    "expected_protocol_rejections": 267,
+    "fragmentation_positions": 159,
+    "truncation_positions": 155,
+    "real_pipe_eof_checks": 2
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "native_windows_tested": false,
+  "client_sha256": "f0282195bf939aded456aa54258bcf0c237ccd9255660d665875feaaf6680495",
+  "test_sha256": "ce3c84f44353420fc727591526a339d3f17d9594aff07727842dafb5e6d5512c",
+  "scope": "Client parser/connection tests with independent framed fixtures and real Python child EOF probes; native encoding/output equivalence is a separate integration gate."
+}

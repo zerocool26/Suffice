@@ -1,0 +1,10 @@
+# Squared affine transform with a bounded accepted input domain.
+# Intended for clustered, smooth, boundary, alternating, or constant generator
+# data. Full-range uniform int32 data is correctly rejected: the squared
+# transformed value could exceed int64. Use affine_absolute.suf for full range.
+input current 0 0
+scale doubled current 2
+const bias 12345
+add shifted doubled bias
+square energy shifted
+output energy > 250000000000000000

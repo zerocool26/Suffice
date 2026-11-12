@@ -1,0 +1,13 @@
+# A calibrated magnitude on channel zero OR a large negative component on channel 1.
+# All intermediate arithmetic is valid for the full int32 input range.
+input x 0 0
+input y 1 0
+scale calibrated x -3
+const bias 12345
+add shifted calibrated bias
+abs magnitude shifted
+const zero 0
+min negative_y y zero
+abs negative_magnitude negative_y
+max either magnitude negative_magnitude
+output either > 500000000

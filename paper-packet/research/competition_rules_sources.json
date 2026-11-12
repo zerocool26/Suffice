@@ -1,0 +1,223 @@
+{
+  "schema_version": 1,
+  "research_date_utc": "2026-11-12",
+  "status": "published_requirements_verified; entrant_specific_compliance_unresolved",
+  "scope": "Competition rules research only. No legal acceptance, account change, public upload, competition entry or final submission performed. No previous release modified.",
+  "verification_layers": {
+    "independent_indexed_retrieval": "Official Kaggle overview/submission-requirements text retrieved with web search; several crawls were labeled last month. This independently confirms the document requirements, deadline, rubric and track distinction.",
+    "live_delegated_verification": "Root agent reported reading the live overview and complete rules DOM with CUA at approximately 2026-11-12 06:07 UTC. Its explicit findings are recorded as delegated primary-page verification, not as text returned by the child web tool.",
+    "direct_open_limitation": "Child web opens of overview sections, rules and several discussions returned zero readable lines or an access error. Those empty responses are not treated as evidence for the rules text.",
+    "historical_packet": "The earlier local packet records a live-browser rules review and host replies dated 2026-11-12 UTC. Newly corroborated rules are distinguished from forum claims not independently re-fetched in this pass."
+  },
+  "primary_sources": [
+    {
+      "id": "K1",
+      "url": "https://www.kaggle.com/competitions/gemma-4-developer-agent-paper/overview/submission-requirements",
+      "title": "Paper Track overview and submission requirements",
+      "status": "indexed_text_verified_and_root_live_overview_verified",
+      "web_refs": [
+        "turn93search0",
+        "turn93search1",
+        "turn95search0",
+        "turn100search0"
+      ],
+      "direct_open_ref": "turn96view0",
+      "direct_open_readable_lines": 0,
+      "supports": [
+        "word_cap",
+        "required_sections",
+        "optional_public_notebook",
+        "optional_public_pdf",
+        "public_access",
+        "deadline",
+        "writeup_submit_required",
+        "rubric",
+        "main_track_not_required",
+        "unpublished_related_research",
+        "non_archival",
+        "private_resource_publication"
+      ],
+      "note": "Repeated search hits reproduce the same primary overview; they are not independent rule authorities."
+    },
+    {
+      "id": "K2",
+      "url": "https://www.kaggle.com/competitions/gemma-4-developer-agent-paper/rules",
+      "title": "Paper Track binding rules",
+      "status": "root_live_complete_dom_verified",
+      "verification_time_utc_approx": "2026-11-12 06:07",
+      "verifier": "root agent using CUA, reported in collaboration message",
+      "child_direct_open_ref": "turn96view1",
+      "child_direct_open_readable_lines": 0,
+      "supports": [
+        "max_team_5",
+        "daily_submissions_5",
+        "final_selections_2",
+        "winner_license_apache_2_0",
+        "external_data_access_reasonableness",
+        "proprietary_tool_reproducibility",
+        "competition_data_security",
+        "account_team_integrity",
+        "eligibility_and_authorization",
+        "sharing_restrictions",
+        "originality_rights",
+        "conditional_winner_windows",
+        "publicity_privacy_tax_terms"
+      ],
+      "not_certified": [
+        "entrant_personal_eligibility",
+        "entrant_account_history",
+        "rights_chain",
+        "prior_publication_history",
+        "acceptance_or_submission"
+      ]
+    },
+    {
+      "id": "K3",
+      "url": "https://www.kaggle.com/competitions/gemma-4-developer-agent-paper/overview/evaluation",
+      "title": "Evaluation route",
+      "status": "direct_open_no_readable_lines; rubric verified from K1 and root live overview",
+      "web_ref": "turn96view2"
+    },
+    {
+      "id": "K4",
+      "url": "https://www.kaggle.com/competitions/gemma-4-developer-agent-paper/overview/timeline",
+      "title": "Timeline route",
+      "status": "direct_open_no_readable_lines; deadline verified from K1 and root live overview",
+      "web_ref": "turn96view3"
+    },
+    {
+      "id": "K5",
+      "url": "https://www.kaggle.com/competitions/gemma-4-developer-agent/overview",
+      "title": "Separate prediction competition overview",
+      "status": "indexed_text_verified_for_track_distinction_only",
+      "web_refs": [
+        "turn93search2",
+        "turn95search1"
+      ],
+      "supports": [
+        "different_prediction_submission_format",
+        "prediction_agent_model_restrictions_not_automatically_paper_requirements"
+      ],
+      "limitation": "Indexed model variants differed across crawls; no current prediction-model recommendation or rule certification made."
+    }
+  ],
+  "verified_constraints": {
+    "maximum_words": 3000,
+    "minimum_words_identified": null,
+    "mandatory_page_count_identified": null,
+    "mandatory_font_or_template_identified": null,
+    "required_content": [
+      "title",
+      "subtitle",
+      "abstract",
+      "introduction",
+      "research description including methods and experiments",
+      "related works and citations"
+    ],
+    "submission_object": "Kaggle Writeup, saved and actually submitted",
+    "pdf_route": "Public Project Link to an arXiv-ready PDF; publicly accessible without login/paywall",
+    "code_route": "Optional public notebook through Project Links",
+    "private_attached_resource_note": "The overview warns that attached private Kaggle resources become public after deadline.",
+    "deadline_utc": "2026-11-12T23:59:00Z",
+    "deadline_chicago": "2026-11-12 17:59 CST",
+    "deadline_may_change": true,
+    "rubric": {
+      "criteria": [
+        "Novelty",
+        "Quality",
+        "Relevance",
+        "Verifiability",
+        "Clarity"
+      ],
+      "score_each_min": 0,
+      "score_each_max": 5,
+      "aggregation": "equal arithmetic mean of five criteria"
+    },
+    "original_unpublished_research": true,
+    "non_archival": true,
+    "main_prediction_competition_participation_required": false,
+    "mandatory_gemma_use_identified": false,
+    "mandatory_gemma_use_interpretation": "No such requirement was found in the live paper-track overview or complete rules. This is not a guarantee that any unrelated systems paper will satisfy research relevance or judging quality.",
+    "proposal_only_explicit_permission_verified": false,
+    "team_limit": 5,
+    "daily_submission_limit": 5,
+    "final_selection_limit": 2,
+    "winner_license": "Apache License 2.0",
+    "winner_response_window": "one week",
+    "winner_documentation_window": "two weeks"
+  },
+  "conservative_editorial_decisions_not_rules": [
+    "Keep the entire paper, including title, subtitle, headings, captions, tables and references, below 3000 words; no exclusion was verified.",
+    "Apply the same word ceiling to the PDF alternative; no PDF exception was verified.",
+    "Present actual implemented systems experiments as the contribution and mark Gemma-agent integration as unevaluated future work.",
+    "Treat public hosting and actual Submit confirmation as separate from local PDF creation.",
+    "Use the original code license notice; do not silently replace it merely because a conditional winner license is specified."
+  ],
+  "unresolved": [
+    "Entrant age/majority and any applicable sponsor exception or consent, residence, sanctions/export and employer authorization.",
+    "Account/team history, daily submission count and final selections.",
+    "Authorship, rights, prior publication and ability to grant required licenses.",
+    "Whether a proposal with no completed experiments would be accepted; no explicit proposal-only permission located.",
+    "Whether reference/caption words are excluded from the cap; no exemption located.",
+    "Current specific host clarifications on AI assistance, arXiv/parallel submission, prior pilot publication, code hosting and notebook rerun expectations were recorded historically but not re-fetched in this pass.",
+    "Public project/notebook URLs, unauthenticated accessibility, actual entered/submitted status."
+  ],
+  "historical_packet": {
+    "path": "/workspace/scratch/8dfa229f9a87/deliverables_kaggle_suffice_2026/Suffice_Gemma4_Paper_Packet.zip",
+    "sha256": "bfd32da30fe9ed6ee86c199e4cc453985bd5e7a9e33db3b08259d4b55d474e53",
+    "rules_member": "Suffice_Gemma4_Paper_Packet/support/Rules_and_Sources.json",
+    "rules_member_sha256": "94ac16c9d53108609da5b4b3054ddb24ebff63ca73003f21fc99cf9dfcda72fd",
+    "checklist_member": "Suffice_Gemma4_Paper_Packet/Submission_Checklist.md",
+    "checklist_member_sha256": "39e408356fab4197d3612e369d6f70c1ee808224651e142c9b57c375f114f467",
+    "historical_verification_date_utc": "2026-11-12",
+    "official_reply_links": [
+      {
+        "kind": "official_host_staff_reply",
+        "url": "https://www.kaggle.com/competitions/gemma-4-developer-agent-paper/discussion/745712",
+        "findings": [
+          "Coding assistants allowed; entrant remains responsible for terms and submission.",
+          "Individual unaffiliated entrants may receive prizes; organizer addresses likeness accommodations."
+        ]
+      },
+      {
+        "kind": "official_host_reply",
+        "url": "https://www.kaggle.com/competitions/gemma-4-developer-agent-paper/discussion/743310",
+        "findings": [
+          "Nonarchival; parallel submission and arXiv permitted."
+        ]
+      },
+      {
+        "kind": "official_host_reply",
+        "url": "https://www.kaggle.com/competitions/gemma-4-developer-agent-paper/discussion/745150",
+        "findings": [
+          "Approval concerned one described prior pilot plus substantial extension; not blanket prior-publication approval."
+        ]
+      },
+      {
+        "kind": "official_host_reply",
+        "url": "https://www.kaggle.com/competitions/gemma-4-developer-agent-paper/discussion/751804",
+        "findings": [
+          "GitHub sharing should work; external dataset permission still required."
+        ]
+      },
+      {
+        "kind": "official_host_reply",
+        "url": "https://www.kaggle.com/competitions/gemma-4-developer-agent-paper/discussion/751403",
+        "findings": [
+          "Independent review permitted subject to licensing; no aggregate-only reporting restriction."
+        ]
+      },
+      {
+        "kind": "official_host_reply",
+        "url": "https://www.kaggle.com/competitions/gemma-4-developer-agent-paper/discussion/750338",
+        "findings": [
+          "All submissions considered across categories.",
+          "Notebook Run All need not execute an entire long pipeline; judges are not guaranteed to execute code."
+        ]
+      }
+    ],
+    "current_status": "Rules relevant to the rewrite corroborated by root live reading; forum-reply text not independently re-fetched here."
+  },
+  "excluded_sources": "Participant notebooks, unrelated competitions and third-party summaries encountered in search were not used as official rule authority.",
+  "copyright_handling": "Concise factual paraphrases and links only; no complete rules or forum discussions republished."
+}

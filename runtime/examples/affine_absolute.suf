@@ -1,0 +1,8 @@
+# An affine transform followed by absolute value and a threshold.
+# Valid for the entire int32 input range; uses int64 intermediates.
+input current 0 0
+scale doubled current 2
+const bias 12345
+add shifted doubled bias
+abs magnitude shifted
+output magnitude > 500000000

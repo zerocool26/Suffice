@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "verdict": "No unresolved critical factual, numerical, scope or rule-structure issue found in the final canonical manuscript.",
+  "reviewed_utc": "2026-11-12T06:19:09.642150+00:00",
+  "reviewed_manuscript_sha256": "8596948fc0305b0acaeb147cd601ecdbc9c88935f8b54456eec180a8a5277b19",
+  "initial_manuscript_sha256": "a3433732325d6d1a348a47ed887e398bcbfb4441b0d14c127bfd69148e9967b9",
+  "word_counts": {
+    "whitespace_words": 2513,
+    "conservative_ascii_alphanumeric_segments": 2684
+  },
+  "maximum_words": 3000,
+  "required_sections_present": true,
+  "reviewed_files_sha256": {
+    "paper/Suffice_Kaggle_Writeup.md": "8596948fc0305b0acaeb147cd601ecdbc9c88935f8b54456eec180a8a5277b19",
+    "integration/repository_read_bridge.py": "2f35166047410ddf30fe140a90de93d8a7b3c8544f4a979ce83d0f048bb2c1d1",
+    "integration/test_repository_read_bridge.py": "d28e41e2d39b66f2e8eabf4cf9ab4a93975bd71be771e6b2c03d4c99fca456ff",
+    "integration/validation_native/RESULT.json": "aecb7e7dcd48bc4772db252d6e0d508cdbf1efc909ea102a1f1b2d104c9e0f4a",
+    "verification/VERIFICATION_RECEIPT.json": "338ea97953aa184cac2173c6bac7e60107a5d078cce734983f9d7becabe25030",
+    "verification/OFFLINE_AUDIT_RESULT.json": "ecb742a73ff6a6123567c12ede9d033aa110feb5a834501a5ed6d80690588656",
+    "research/paper_claim_ledger.json": "75b411de3ce0934cd4703419090b2a850650af2d1fc0ceb4dcdc2ea3c0419f72",
+    "research/competition_rules_sources.json": "1d9f768d78452c88f9c0870b41e1f25cb09fd900c7a1fbcd2d7aefc49938eed2"
+  },
+  "runtime_summary_sha256": "b8923214bf1209b681e870fb305294ef00a90d044c829ab4594cc8c087469a04",
+  "review_items": [
+    {
+      "id": "R01",
+      "priority": "required_clarity",
+      "status": "resolved",
+      "location": "Abstract",
+      "issue": "Wire-byte wording could imply bidirectional bytes, whereas the result measures complete-session stdout responses.",
+      "resolution": "Final abstract says complete-session response bytes; Table 2 defines paired stdout reductions including controls and QUIT."
+    },
+    {
+      "id": "R02",
+      "priority": "required_scope",
+      "status": "resolved",
+      "location": "Abstract and Section 3",
+      "issue": "The newly added bridge could be mistaken for part of the frozen performance experiment.",
+      "resolution": "Final text states the bridge was added afterward, its validation/hashing/rendering costs were not timed, and bridge latency remains unmeasured."
+    },
+    {
+      "id": "R03",
+      "priority": "targeted_relevance",
+      "status": "resolved",
+      "location": "Section 3",
+      "issue": "A generic model-tool description did not expose the actual limited interface.",
+      "resolution": "The exact read_repository(scope, generation, first, count, max_bytes) API, fixed all-row predicate, result-cache bypass and absence of path/semantic search are explicit."
+    },
+    {
+      "id": "R04",
+      "priority": "required_evidence",
+      "status": "resolved",
+      "location": "Section 6",
+      "issue": "The initial draft anticipated bridge execution while the receipt was still pending.",
+      "resolution": "Final native/bridge receipt now passes with stable input hashes: four processes, 114 checks, twelve complete observations, six cross-transport equalities and 36 expected rejections. Injected prefix/identity failures remain distinct from model inference."
+    },
+    {
+      "id": "R05",
+      "priority": "required_factual_wording",
+      "status": "resolved",
+      "location": "Abstract",
+      "issue": "Cache-hit latency need not omit encoding or materialization; complete hit-request timings can include both.",
+      "resolution": "Final wording refers to cache-lookup microbenchmarks that can omit these costs, avoiding a categorical false definition."
+    }
+  ],
+  "unresolved_required_corrections": [],
+  "rubric_assessment": {
+    "Novelty": {
+      "assessment": "Defensible, deliberately scoped resource contribution. Constituent caching, snapshots, leases and length framing are credited as established. Exact observation/completion, adversarial feature-semantic admission and equal-output evaluation form the paper argument.",
+      "limit": "This review does not certify priority, field-wide novelty or superiority to established repository or binary-protocol systems."
+    },
+    "Quality": {
+      "assessment": "Same-build paired comparisons, output equality, negative control, raw-wall sensitivity and order/outlier reporting support the local result. Model/request independence and body-byte totals are correctly bounded.",
+      "limit": "One corpus, length predicates, ten pairs per scenario, a shared CPU and short serialized sessions constrain generalization; all are disclosed."
+    },
+    "Relevance": {
+      "assessment": "The actual bridge now gives a concrete host/model boundary, generation argument, bounded row reads and completion rule. Mutation and prompt-injection limits are explicit.",
+      "limit": "It is not a path search service, edit controller or tested Gemma agent. Gemma inference is not mandated by the verified paper-track rules and was not demanded here."
+    },
+    "Verifiability": {
+      "assessment": "Retained source/input identities, complete-output records, native gate receipts, bridge receipts and an executed standard-library notebook audit support the stated claims. Offline evidence checking is distinguished from fresh timing/model execution.",
+      "limit": "Final public asset access, rendered PDF consistency and fresh target-machine reproduction remain separate actions."
+    },
+    "Clarity": {
+      "assessment": "The final manuscript distinguishes generation consistency from freshness, retention from total RSS, required output from encoding, backend timing from bridge correctness, geometric mean from median, and specifications from proof.",
+      "limit": "No numerical judging score or predicted award outcome is assigned."
+    }
+  },
+  "bridge_evidence": {
+    "status": "passed",
+    "sha256": "aecb7e7dcd48bc4772db252d6e0d508cdbf1efc909ea102a1f1b2d104c9e0f4a",
+    "inputs_match_current_files": true,
+    "counters": {
+      "native_processes": 4,
+      "checks": 114,
+      "complete_observations": 12,
+      "verified_rows": 30,
+      "verified_body_bytes": 2300,
+      "expected_rejections": 36,
+      "injected_prefix_failures": 2,
+      "injected_prefix_body_bytes": 48,
+      "identity_failures": 2,
+      "cross_transport_equalities": 6
+    },
+    "model_inference_executed": false,
+    "timing_claim_supported": false
+  },
+  "notebook_evidence": {
+    "status": "passed",
+    "sha256": "338ea97953aa184cac2173c6bac7e60107a5d078cce734983f9d7becabe25030",
+    "notebook_hash_matches": true,
+    "cells_executed": 5,
+    "historical_native_outputs_reexecuted": false,
+    "kaggle_ui_execution": false,
+    "public_posting": false
+  },
+  "external_primary_spot_checks": [
+    {
+      "reference": 2,
+      "url": "https://arxiv.org/abs/2605.14478",
+      "retrieval_ref": "turn115view0",
+      "finding": "Title, Weng authorship and narrow stale-context diagnostic interpretation agree."
+    },
+    {
+      "reference": 3,
+      "url": "https://ai.google.dev/gemma/docs/capabilities/text/function-calling-gemma4",
+      "retrieval_ref": "turn115view2",
+      "finding": "Structured function declarations and host validation/execution boundary agree."
+    },
+    {
+      "reference": 5,
+      "url": "https://arxiv.org/abs/2601.16746v4",
+      "finding": "Title, Wang authorship, version and task-context pruning description agree."
+    }
+  ],
+  "metadata_note": "The preliminary paper_claim_ledger.json C11/C12 describe a proposed controller and token-ID parity. This review supersedes that preliminary bridge status only for the now-tested narrow bridge; edit-controller and processor/token-level claims remain proposed. Refresh or clearly version the ledger in the final packet.",
+  "not_certified": [
+    "Rendered PDF visual quality or PDF-to-manuscript identity, which root is checking separately",
+    "Public PDF/notebook hosting or final Kaggle editor count",
+    "Entrant eligibility, account/team history, originality/rights, rule acceptance or submission",
+    "Field-wide novelty or competition award score"
+  ],
+  "execution_scope": "Read-only manuscript, source, receipt and retained-data inspection; no new native execution, benchmark or model call. No manuscript edits by reviewer."
+}

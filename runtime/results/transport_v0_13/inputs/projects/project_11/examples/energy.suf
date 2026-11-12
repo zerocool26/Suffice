@@ -1,0 +1,4 @@
+# int32 squared fits within signed int64, including INT32_MIN.
+input current 0 0
+square energy current
+output energy > 1000000

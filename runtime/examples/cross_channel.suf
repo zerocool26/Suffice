@@ -1,0 +1,7 @@
+# Requires a raw/packed dataset with at least two channels.
+# A raw input frame is one little-endian int32 per channel.
+input first 0 0
+input second 1 0
+sub difference first second
+abs magnitude difference
+output magnitude > 100000

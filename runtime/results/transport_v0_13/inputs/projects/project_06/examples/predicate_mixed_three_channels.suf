@@ -1,0 +1,12 @@
+# An exact three-channel filter lowered to a shared Boolean threshold DAG.
+input x 0 0
+input y 1 0
+input z 2 0
+abs mx x
+abs my y
+min simultaneous mx my
+const zero 0
+min negative z zero
+abs mz negative
+max selected simultaneous mz
+output selected > 500000000

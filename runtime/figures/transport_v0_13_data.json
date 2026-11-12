@@ -1,0 +1,131 @@
+{
+  "scenarios": {
+    "computed": {
+      "label": "Computed results",
+      "matched_final_stats": true,
+      "matched_request_wire_bytes": true,
+      "pairs": 10,
+      "query_time_geometric_ratio_jsonl_over_binary": 2.9878243966551765,
+      "raw_wall_geometric_ratio_jsonl_over_binary": 1.9473559910540834,
+      "response_byte_reduction_mean_percent": 49.58926752494179,
+      "response_bytes_median": {
+        "binary": 5927971.0,
+        "jsonl": 11759346.0
+      },
+      "service_equivalent_reduction_percent": 50.67990487548835,
+      "service_geometric_ratio_jsonl_over_binary": 2.027571109657104,
+      "service_median_ms": {
+        "binary": 40.1867535,
+        "jsonl": 78.511699
+      },
+      "service_observed_ratio_range": [
+        1.663897607600779,
+        2.5940468887275223
+      ],
+      "service_paired_median_ratio": 1.9885383364746771,
+      "service_pairs_favoring_binary": 10
+    },
+    "empty": {
+      "label": "Empty output",
+      "matched_final_stats": true,
+      "matched_request_wire_bytes": true,
+      "pairs": 10,
+      "query_time_geometric_ratio_jsonl_over_binary": 0.9910223984297638,
+      "raw_wall_geometric_ratio_jsonl_over_binary": 1.0695377952014675,
+      "response_byte_reduction_mean_percent": -2.29677053926316,
+      "response_bytes_median": {
+        "binary": 81732.0,
+        "jsonl": 79902.0
+      },
+      "service_equivalent_reduction_percent": 6.5505213690705055,
+      "service_geometric_ratio_jsonl_over_binary": 1.0700969279340895,
+      "service_median_ms": {
+        "binary": 22.5630235,
+        "jsonl": 22.214868
+      },
+      "service_observed_ratio_range": [
+        0.9151736725277034,
+        2.0116903121011713
+      ],
+      "service_paired_median_ratio": 0.9911939965755456,
+      "service_pairs_favoring_binary": 4
+    },
+    "mixed_queries": {
+      "label": "Mixed predicates",
+      "matched_final_stats": true,
+      "matched_request_wire_bytes": true,
+      "pairs": 10,
+      "query_time_geometric_ratio_jsonl_over_binary": 2.89543268915312,
+      "raw_wall_geometric_ratio_jsonl_over_binary": 1.830404167729353,
+      "response_byte_reduction_mean_percent": 49.4545402924694,
+      "response_bytes_median": {
+        "binary": 6042366.5,
+        "jsonl": 11954320.0
+      },
+      "service_equivalent_reduction_percent": 47.43283949180922,
+      "service_geometric_ratio_jsonl_over_binary": 1.9023283554457626,
+      "service_median_ms": {
+        "binary": 42.16415550000001,
+        "jsonl": 81.07898699999998
+      },
+      "service_observed_ratio_range": [
+        1.5564831019092835,
+        2.3239910358859515
+      ],
+      "service_paired_median_ratio": 1.8912064481374635,
+      "service_pairs_favoring_binary": 10
+    },
+    "pressure": {
+      "label": "Cache pressure",
+      "matched_final_stats": true,
+      "matched_request_wire_bytes": true,
+      "pairs": 10,
+      "query_time_geometric_ratio_jsonl_over_binary": 3.3873875145737324,
+      "raw_wall_geometric_ratio_jsonl_over_binary": 1.6927250000068454,
+      "response_byte_reduction_mean_percent": 49.57383691262308,
+      "response_bytes_median": {
+        "binary": 3499152.5,
+        "jsonl": 6939163.0
+      },
+      "service_equivalent_reduction_percent": 44.42707023527475,
+      "service_geometric_ratio_jsonl_over_binary": 1.7994372516144486,
+      "service_median_ms": {
+        "binary": 29.856916499999997,
+        "jsonl": 53.190580999999995
+      },
+      "service_observed_ratio_range": [
+        1.6542298031725708,
+        2.138425256284108
+      ],
+      "service_paired_median_ratio": 1.773437310242782,
+      "service_pairs_favoring_binary": 10
+    },
+    "reuse": {
+      "label": "Repeated results",
+      "matched_final_stats": true,
+      "matched_request_wire_bytes": true,
+      "pairs": 10,
+      "query_time_geometric_ratio_jsonl_over_binary": 3.676303555451199,
+      "raw_wall_geometric_ratio_jsonl_over_binary": 2.037930398126942,
+      "response_byte_reduction_mean_percent": 49.588677959095214,
+      "response_bytes_median": {
+        "binary": 5928110.0,
+        "jsonl": 11759484.0
+      },
+      "service_equivalent_reduction_percent": 53.2290926176688,
+      "service_geometric_ratio_jsonl_over_binary": 2.138081247441809,
+      "service_median_ms": {
+        "binary": 34.7565555,
+        "jsonl": 75.17064300000001
+      },
+      "service_observed_ratio_range": [
+        1.9995198139562873,
+        2.2948595755062047
+      ],
+      "service_paired_median_ratio": 2.1329762544215036,
+      "service_pairs_favoring_binary": 10
+    }
+  },
+  "scope": "Derived presentation of retained observations, no new native execution",
+  "summary_sha256": "b8923214bf1209b681e870fb305294ef00a90d044c829ab4594cc8c087469a04"
+}

@@ -1,0 +1,37 @@
+suffice_payload 0.13.0 - exact ordered gate-to-payload execution
+
+Usage:
+  suffice_payload run --raw FEATURES.raw --packed FEATURES.suf --payload ROWS.sufpay
+      --channels N --program QUERY.suf [options]
+
+Options:
+  --backend auto|wordcode|zoned|dense|scalar  Default: auto
+  --first-row N                              Default: 0
+  --row-count N                              Default: remaining rows
+  --payload-validation full|on-demand        Default: full
+  --max-output-bytes N                       Default: UINT64_MAX
+  --write-rows NEWdirectory                  Write row-<global-row>.bin files
+  --json NEWpath                            Also save the JSON report
+
+The program is a .suf source file. Row ranges use global indices; count zero is
+valid. Auto uses verified block bounds and wordcode when lowering is complete,
+otherwise scalar. Full admission verifies every payload before querying;
+on-demand verifies only selected payload contents, while admitting all metadata.
+
+Without --write-rows, selected rows are consumed into a count and FNV-1a summary.
+The hash includes each global row index and byte length as little-endian u64s,
+then its bytes; it is a diagnostic checksum, not an integrity guarantee.
+Output directories and report files must be new; their parents must exist.
+Inside the row directory, row-*.bin names are reserved for decoded payloads.
+Files are created exclusively and never overwritten. An error can leave earlier
+rows and an incomplete current file; the JSON report identifies that partial
+output. Writes are not a crash-durable transaction. Output-byte limits are checked
+against the exact selection before the first row callback.
+
+JSON goes to stdout on success or error; errors also go to stderr. Admission time
+includes owned copies and the selected verification policy. Preparation includes
+program reading, query compilation, and worker construction. Run time includes
+selection, selected payload decoding, hashing, and optional row-file writes.
+Snapshot logical bytes exclude temporary admission copies and allocator overhead;
+worker scratch is an estimate, not process peak memory. Default admission limits:
+512 MiB logical snapshot, 1,048,576 rows, 1 MiB per decoded row, 4 GiB decoded total.
