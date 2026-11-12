@@ -21,7 +21,7 @@ Both remain inside the unmodified release archive. Historical build manifests an
 
 ## Added presentation files
 
-The repository landing page, project description, desktop-concept notes, ignore/attribute rules, and asset filenames were added for public navigation. They do not modify the frozen experiment or the bridge's historical validation. The complete source, research, test, and evidence directories retain their internal structure.
+The repository landing page, project description, runtime execution workbench notes, ignore/attribute rules, and asset filenames were added for public navigation. The workbench image is labeled as a synthetic demo and concept UI. These presentation files do not modify the frozen experiment or the bridge's historical validation. The complete source, research, test, and evidence directories retain their internal structure.
 
 The source archives were checked for ZIP integrity and matched the recorded hashes before packaging. A targeted publication review inspected the recovered files and nested archives for credential/private-key patterns and unrelated private material. No such material was identified. This is a publication-content check, not a comprehensive security assessment of the runtime.
 
@@ -29,6 +29,6 @@ The source archives were checked for ZIP integrity and matched the recorded hash
 
 The repository-root README supplies commands for the `runtime/` and `paper-packet/` layout. Historical documents inside the preserved packet may describe their original adjacent extracted-release layout. Use new output directories for local work and keep the retained evidence unchanged.
 
-The notebook and offline auditor verify retained records. Native reruns, new measurements, and desktop implementation are separate operations. Existing records are not reclassified as new results merely because the project is published.
+The notebook and offline auditor verify retained records. Native reruns, new measurements, and workbench implementation are separate operations. Existing records are not reclassified as new results merely because the project is published.
 
 Existing MIT notices are preserved. This publication does not assert that the research paper was submitted to, accepted by, or awarded by a competition.

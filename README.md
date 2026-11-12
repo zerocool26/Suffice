@@ -8,7 +8,7 @@ Suffice is a local-first C++20 and Python research runtime for exact predicates 
 
 Development work unfolds over time. An agent inspects code, plans a change, invokes tools, and returns to earlier observations while the project continues to change. Suffice makes the identity and completion of those observations inspectable, with separate controls for the state kept available for reuse.
 
-**Current status:** runtime **0.13.0**, a separately tested read-only integration bridge, a five-page research paper, and a self-contained evidence-verification notebook. The desktop interface below is a product concept.
+**Current status:** runtime **0.13.0**, a separately tested read-only integration bridge, a five-page research paper, and a self-contained evidence-verification notebook. The runtime execution workbench below is a concept UI.
 
 **Start here:** [Paper PDF](paper-packet/paper/Suffice_Paper.pdf) · [Runtime documentation](runtime/README.md) · [Read bridge](paper-packet/integration/README.md) · [Verification notebook](paper-packet/verification/Suffice_Offline_Verification.ipynb) · [Project description](docs/PROJECT_DESCRIPTION.md)
 
@@ -97,11 +97,11 @@ Sources: [measurement method](runtime/docs/transport_experiment_v0_13.md), [summ
 | `paper-packet/source`, `runtime/baseline` | Unmodified full release archives and earlier lineage |
 | `assets`, `docs` | Project imagery, product description, and publication notes |
 
-## Desktop vision
+## Runtime execution workbench
 
-![Suffice desktop concept](assets/suffice-desktop-concept.png)
+![Suffice runtime execution workbench](assets/suffice-runtime-execution-workbench.png)
 
-**Concept rendering with illustrative telemetry; the interface is not implemented.** The intended desktop product brings projects, captured generations, task activity, and resource retention into one inspectable workspace. See [concept scope](docs/DESKTOP_CONCEPT.md) for the distinction between existing runtime behavior and proposed orchestration/UI features.
+**Synthetic demo and concept UI; the interface is not implemented.** The proposed workbench brings captured generations, execution graphs, predicate plans, encoded selections, delivery validation, and retained accounting into one inspectable workspace. See [workbench scope](docs/RUNTIME_WORKBENCH.md) for the distinction between existing runtime behavior and proposed interface features.
 
 ## Engineering boundaries and next steps
 
